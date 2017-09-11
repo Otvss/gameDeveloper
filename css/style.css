@@ -1,0 +1,148 @@
+.accessTitulo, .msg-box-title{
+    padding: 5px;
+    font-size: 1.5em;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    line-height: 12px;
+    border-bottom: 3px solid #cd7200;
+    border-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: #f08600;
+}
+
+.accessTitulo small, .msg-box-title small{
+    font-size: 0.5em;
+    color: #cfcfcf;
+}
+
+.accessUser{
+    margin-top: 35px;
+}
+
+.accessUser .control-input{
+    color: #f08600;
+    margin-top: 15px;
+}
+
+button[name="menuLateral"]{
+    width: 30px; 
+    height: 30px; 
+    border: none;
+    background: url(../imagens/botoes/menuSymbol.png); 
+    background-position: center; 
+}
+
+.btnAula img{
+    padding: 0px;
+}
+
+.btnAula:hover{
+    border-radius: 3px;
+    outline: 1px solid #2b2b2b;
+}
+
+.btnAula:hover img{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#lcs{
+    height: 315px;
+    max-height: 315px;
+    padding: 0px;
+    border: 1px solid #000;
+    border-top: none;
+    overflow-y: auto;
+    background: #0d0d0d;
+}
+
+#lcs div, #lcs img, #lcs a{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+#lcs h3{
+    padding-left: 5px;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+#lcs .col-ds-12{
+    border-bottom: 1px solid #313131;
+}
+
+#menuLateral{
+    display: block;
+    z-index: 9997;
+    float: left;
+    position: fixed;
+    width: 220px; 
+    height: calc(100% - 50px);
+    padding: 5px;
+    top: 50px;
+    background: #1b1b1b;
+    border: 1px solid #000;
+}
+
+#menuLateral h1{
+    font-size: 1.2em;
+}
+
+#navUser{
+    display: table;
+    float: right;
+    padding: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+#navUser h3{
+    display: table-cell;
+    margin: 0px;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.nav-bar .control-input{
+    width: 400px; 
+    background: #FFF; 
+    border: 1px solid #000;
+    border-radius: 3px
+}
+
+#not-dest{
+    display: table;
+    height: 300px;
+}
+
+#not-sec div{
+    display: table-cell;
+    max-height: 30%;
+    margin: 1.5% 0px;
+    vertical-align: top;
+}
+
+#not-sec div, #not-sec a{
+    margin: 0px;
+    padding: 0px;
+}
+
+#not-sec h1{
+    font-size: 1.2em;
+}
+
+#not-sec .col-ds-9{
+    padding-top: 2px;
+    padding-left: 10px;
+}
+
+#not-sec small{
+    color: #cfcfcf;
+}
+
+#not-sec .col-ds-12:nth-child(2){
+    margin: 5px 0px;
+}
