@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-ds-12" style="display: flex; align-items: center; border-top: 1px solid #2b2b2b">
                 <p style="color: #f08600; margin-right: 5px">"Eu ouço você, clicando...", <span style="color: #FFF">Lee Sin</span></p>
-                <img src="<?=base_url('assets/imagens/pers/leesin.png')?>" alt="" style="border-radius: 100%">
+                <img src="<?=base_url('assets/imagens/pers/leesin.jpg')?>" alt="" style="border-radius: 100%">
             </div>
         </div>
     </div>

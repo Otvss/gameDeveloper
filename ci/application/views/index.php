@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         
         <!-- SCRIPT -->
-        <script src="script/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script src="script/main.js" type="text/javascript"></script>
-        <script src="script/slide.js" type="text/javascript"></script>
-        <script src="script/loginScreen.js" type="text/javascript"></script>
-        <script src="script/msgBox.js" type="text/javascript"></script>
+        <script src="<?=base_url('assets/script/jquery-3.2.1.min.js') ?>" type="text/javascript"></script>
+        <script src="<?=base_url('assets/script/main.js') ?>" type="text/javascript"></script>
+        <script src="<?=base_url('assets/script/slide.js') ?>" type="text/javascript"></script>
+        <script src="<?=base_url('assets/script/loginScreen.js') ?>" type="text/javascript"></script>
+        <script src="<?=base_url('assets/script/msgBox.js') ?>" type="text/javascript"></script>
         
         <!-- CSS-->
         <link href="https://fonts.googleapis.com/css?family=Abel|Pacifico" rel="stylesheet"/>
@@ -37,7 +37,7 @@
                     
                     <div id="not-dest" class="col-ds-6">
                         <div class="slide" Tduracao="3000" Ttrans="10000" style="background: #f08600">
-                            <img class="slide-moldura" src="imagens/slide/slideMoldura.png" alt="">
+                            <img class="slide-moldura" src="<?=base_url('assets/imagens/slide/slideMoldura.png')?>" alt="">
                             <div class="slide-item active">
                                 <div class="slide-legend">
                                     <h1>Game Developer</h1>
@@ -56,7 +56,7 @@
                                     <a class="btn btn-default" href="#">Saiba Mais +</a>
                                     <a class="btn btn-default" href="#">Comprar</a>
                                 </div>
-                                <img src="<?=base_url('assets/imagens/slide/slideItem2.png')?>" alt="">
+                                <img src="<?=base_url('assets/imagens/slide/slideItem2.jpg')?>" alt="">
                             </div>
                             <div class="slide-item">
                                 <div class="slide-legend">
@@ -66,7 +66,7 @@
                                     <a class="btn btn-default" href="#teste">Saiba Mais +</a>
                                     <a class="btn btn-default" href="#">Cadastrar</a>
                                 </div>
-                                <img src="<?=base_url('assets/imagens/slide/slideItem3.png')?>" alt="">
+                                <img src="<?=base_url('assets/imagens/slide/slideItem3.jpg')?>" alt="">
                             </div>
                             
                             <span class="next"><img src="<?=base_url('assets/imagens/slide/next.png')?>" alt=""></span>
@@ -341,9 +341,9 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- RODAPÉ -->
+            <?php include('includes/footer.php'); ?>
         </main>
-        
-        <!-- RODAPÉ -->
-        <?php include('includes/footer.php'); ?>
     </body>
 </html>

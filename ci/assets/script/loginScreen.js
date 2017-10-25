@@ -1,130 +1,256 @@
+var base_url = "https://gamedeveloper-otvss.c9users.io/ci/";
+
 function loginScreen(){
-        $('<div>', {
-           id: "modal", 
-           style: "z-index: 9998; display: flex; position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; align-items: center; background: rgba(0, 0, 0, 0) 0 0; transition: 0.3s ease-in-out",
-        }).appendTo("body");
+    //MODAL DA TELA DE CADASTRO E LOGIN
+    var modal = $('<div>',{
+        id: "modal",
+        class: "cadLogScreen",
+        style: "z-index: 9996; display: flex; position: fixed; width: 100%; height: 0%; top: 0px; left: 0px; align-items: center",
+    }).appendTo('main').html('<button class="btn-close"><img src="'+base_url+'/assets/imagens/icons/close.png"></button>');
+    
+    //CONTAINER QUE POSICIONA OS ITENS DE CADASTRO E LOGIN
+    $('<div>', {
+        id: 'logScreenObj',
+        class: "container-fixed",
+        style: "float: none; margin: 0 auto;",
+    }).appendTo(".cadLogScreen");
+    
+    //TÍTULO DE BOAS VINDAS
+    $('<p>', {
+        class: 'titulo-janela',
+        style: 'color: #FFF; text-shadow: 1px 1px 0px #000'
+    }).appendTo("#logScreenObj").html("Seja Bem-Vindo Usuário");
+    
+    //CRIAÇÃO DOS COMPONENTES DA TELA DE CADASTRO E LOGIN
+    //TELA DE LOGIN
+    $('<div>',{
+        id: "login",
+        class: "col-ds-4 accessUser",
+        style: "padding: 0px; opacity: 1; transition: 0.3s ease-in-out",
+    }).appendTo("#logScreenObj");
+    
+        var titulo = $('<div>',{
+            class: 'titulo-box',
+        }).appendTo('#login');
+    
+            var titIcon = $('<img>',{
+                src: base_url+'assets/imagens/icons/login.png',
+            }).appendTo('#login .titulo-box');
         
-        document.querySelector("#modal").innerHTML = '<button class="btn-close"><img src="imagens/icons/close.png"></button>';
-        
-        $('<div>', {
-            class: "container-fixed",
-            style: "float: none; margin: 0 auto;",
-        }).appendTo("#modal");
+            var h1L = $('<h1>',{
+                class: "accessTitulo",
+            }).appendTo('#login .titulo-box').html("Login<br><small>Preencha os campos corretamente</small>");
+            
+            $('<div>', {
+                class: "form-control",
+                style: "float: none; margin: 0 auto",
+            }).appendTo('#login');
+            
+                //FORM
+                $('<form>',{
+                    class: 'form-login',
+                    name: 'form-login',
+                }).appendTo('#login .form-control');
+                
+                    //CONTROL INPUT E LABEL
+                    var labelL = [];
+                    for(var i = 0; i < 2; i++){
+                        $('<div>',{
+                            class: 'control-input cilg'+i,
+                        }).appendTo('.form-login');
+                        
+                        labelL.push($('<label>').appendTo('.cilg'+i));
+                    }
                     
-        var divLogin = '<div class="col-ds-4 accessUser" style="padding: 0px; opacity: 0; transition: 0.3s ease-in-out">'
-                            +'<h1 class="accessTitulo">Login <br>'
-                            +'<small>Preencha todos os campos corretamente!</small></h1>'
-                            +'<div class="col-ds-10" style="float: none; margin: 0 auto">'
-                                +'<form name="login">'
-                                    +'<div class="control-input">'
-                                        +'<label>Login <br>'
-                                            +'<input type="text" name="login-cpt" placeholder="Nick ou Email...">'
-                                        +'</label>'
-                                    +'</div>'
-                                    +'<div class="control-input">'
-                                        +'<label>Senha <br>'
-                                            +'<input type="password" name="senha-cpt" placeholder="Digite sua senha...">'
-                                        +'</label>'
-                                        +'<a href="#" style="color: #cfcfcf">Esqueceu o seu login/senha ?</a><br>'
-                                    +'</div>'
-                                +'</form>'
-                                +'<div class="control-input">'
-                                    +'<button name="login-btn" class="btn btn-default btn-medium">Acessar</button>'
-                                +'</div>'
-                            +'</div>'
-                        +'</div>'
-                        +'<div class="col-ds-7 accessUser" style="float: right; padding: 0px; opacity: 0; transition: 0.3s ease-in-out">'
-                            +'<h1 class="accessTitulo">Cadastro <br>'
-                            +'<small>Dados mínimos para realizar o cadastro</small></h1>'
-                            +'<div class="col-ds-11" style="float: none; margin: 0 auto">'
-                                +'<form name="cadastroUser">'
-                                    +'<div class="control-input" style="width: 70%">'
-                                        +'<label>Nome <br>'
-                                            +'<input type="text" name="nome-cptC" placeholder="Digite seu nome completo...">'
-                                        +'</label>'
-                                    +'</div>'
-                                    +'<div class="control-input" style="width: 25%; margin-left: 5%">'
-                                        +'<label>Nick <br>'
-                                            +'<input type="text" name="nick-cptC" placeholder="Ex. Relogio">'
-                                        +'</label>'
-                                    +'</div>'
-                                    +'<div class="control-input" style="width: 45%">'
-                                        +'<label>Email <br>'
-                                            +'<input type="email" name="email-cptC" placeholder="exemplo@exemplo.com">'
-                                        +'</label>'
-                                    +'</div>'
-                                    +'<div class="control-input" style="width: 45%; margin-left: 5%">'
-                                        +'<label>Confirmar Email <br>'
-                                            +'<input type="email" name="email-cptCs" placeholder="exemplo@exemplo.com">'
-                                        +'</label>'
-                                    +'</div>'
-                                    +'<div class="control-input" style="width: 45%">'
-                                        +'<label>Senha <br>'
-                                            +'<input type="password" name="senha-cpt" placeholder="Digite sua senha...">'
-                                        +'</label>'
-                                    +'</div>'
-                                    +'<div class="control-input" style="width: 45%; margin-left: 5%">'
-                                        +'<label>Confirmar Senha <br>'
-                                            +'<input type="password" name="senha-cpts" placeholder="Redigite sua senha...">'
-                                        +'</label>'
-                                    +'</div>'
-                                +'</form>'
-                                +'<div class="control-input">'
-                                    +'<button name="cadUser-btn" class="btn btn-default btn-medium">Cadastrar</button>'
-                                +'</div>'
-                            +'</div>'
-                        +'</div>';
+                    //ROTULAMENTO DOS INPUTS
+                    labelL[0].html("Login<br>");
+                    labelL[1].html("Senha<br>");
+                
+                        //LOGIN
+                        $('<input>',{
+                            type: "text",
+                            name: "login-cpt",
+                            placeholder: "Nick ou Email",
+                        }).appendTo('.cilg0 label');
                         
-        //REALIZA O EFEITO DE FADE E DESLOCAMENTO
+                        //SENHA
+                        $('<input>',{
+                            type: "password",
+                            name: "senha-cpt",
+                            placeholder: "Digite entre 8 à 12 caracteres",
+                        }).appendTo('.cilg1 label');
+                        
+                        //LEMBRETE DE SENHA
+                        var aL = $('<a>',{
+                            href: "#",
+                            style: "color: #cfcfcf",
+                        }).appendTo('.cilg1').html("Esqueceu sua senha / login ?");
+                        
+                        //BOTAO DE ENVIO
+                        $('<button>',{
+                            class: 'btn btn-default btn-medium',
+                            name: 'login-btn',
+                            value: 'Acessar'
+                        }).appendTo('#login .form-control').html("Acessar");
+    
+    //TELA DE CADASTRO
+    $('<div>',{
+        id: "cadastro",
+        class: "col-ds-7 accessUser",
+        style: "float: right; padding: 0px; opacity: 1; transition: 0.3s ease-in-out",
+    }).appendTo("#logScreenObj");
+    
+        var titulo = $('<div>',{
+            class: 'titulo-box',
+        }).appendTo('#cadastro');
+    
+            var titIcon = $('<img>',{
+                src: base_url+'assets/imagens/icons/newUserIcon.png',
+            }).appendTo('#cadastro .titulo-box');
+        
+            var h1L = $('<h1>',{
+                class: "accessTitulo",
+            }).appendTo('#cadastro .titulo-box').html("Cadastro<br><small>Dados mínimos para realizar o cadastro</small>");
+            
+            $('<div>', {
+                class: "form-control",
+                style: "float: none; margin: 0 auto",
+            }).appendTo('#cadastro');
+            
+                //FORM
+                $('<form>',{
+                    class: 'form-cadastro',
+                    name: 'form-cadastro',
+                }).appendTo('#cadastro .form-control');
+                
+                    //CONTROL INPUT E LABEL
+                    var labelC = [];
+                    var inputC = [];
+                    
+                    for(var i = 0; i < 6; i++){
+                        inputC.push($('<div>',{
+                            class: 'control-input cicd'+i
+                        }).appendTo('.form-cadastro'));
+                        
+                        labelC.push($('<label>').appendTo('.cicd'+i));
+                    }
+                    
+                    //ROTULAMENTO DOS INPUTS
+                    labelC[0].html("Nome<br>");
+                    inputC[0].addClass('col-ds-8');
+                    labelC[1].html("Nick<br>");
+                    inputC[1].addClass('col-ds-4');
+                    labelC[2].html("E-mail<br>");
+                    inputC[2].addClass('col-ds-6');
+                    labelC[3].html("Confirmar E-mail<br>");
+                    inputC[3].addClass('col-ds-6');
+                    labelC[4].html("Senha<br>");
+                    inputC[4].addClass('col-ds-6');
+                    labelC[5].html("Confirmar Senha<br>");
+                    inputC[5].addClass('col-ds-6');
+                    
+                    //NOME
+                    $('<input>',{
+                        type: "text",
+                        name: "nome-cpt",
+                        placeholder: "Clovison Almeida Junior",
+                    }).appendTo('.cicd0 label');
+                    
+                    //NICK
+                    $('<input>',{
+                        type: "text",
+                        name: "nick-cpt",
+                        placeholder: "Clovis",
+                    }).appendTo('.cicd1 label');
+                    
+                    //EMAIL
+                    $('<input>',{
+                        type: "email",
+                        name: "email-cpt",
+                        placeholder: "Clovisjr@gamedeveloper.com",
+                    }).appendTo('.cicd2 label');
+                    
+                    //CONFIRMAR EMAIL
+                    $('<input>',{
+                        type: "email",
+                        name: "emailC-cpt",
+                        placeholder: "Clovisjr@gamedeveloper.com",
+                    }).appendTo('.cicd3 label');
+                    
+                    //SENHA
+                    $('<input>',{
+                        type: "password",
+                        name: "senha-cpt",
+                        placeholder: "8 à 12 digitos",
+                    }).appendTo('.cicd4 label');
+                    
+                    //CONFIRMAR SENHA
+                    $('<input>',{
+                        type: "password",
+                        name: "senhaC-cpt",
+                        placeholder: "Redigite a senha...",
+                    }).appendTo('.cicd5 label');
+                    
+                    //CHECKBOX DE ACEITAÇÃO DOS DIREITOS AUTORAIS
+                    $('<input>',{
+                        type: 'checkbox',
+                        value: 'sim',
+                    });
+                    
+                    //BOTAO DE ENVIO
+                    $('<button>',{
+                        class: 'btn btn-default btn-medium',
+                        name: 'cadastro-btn',
+                        value: 'Cadastrar'
+                    }).appendTo('#cadastro .form-control').html("Cadastrar");
+                    
+    //ANIMAÇÕES INICIAIS
+    modal.animate({height: '100%'}, 250);
+    modal.animate({height: '95%'}, 200);
+    modal.animate({height: '100%'}, 150);
+    
+    //AÇÃO DOS BOTÕES
+    document.querySelector("button[name='login-btn']").addEventListener("click", function(){
+        login();
+    });
+    
+    document.querySelector("button[name='cadastro-btn']").addEventListener("click", function(){
+        cadastroUser();
+    });
+    
+    //AÇÕES DOS BOTÕES DA TELA DE CADASTRO E LOGIN
+    document.querySelector(".btn-close").addEventListener("click", function(){
+        modal.animate({height: '0%'}, 200);
+        
+        //REMOVE OS OBJETOS DA TELA DE CADASTRO E LOGIN
         setTimeout(function(){
-            Array.prototype.slice.call(document.querySelectorAll(".accessUser")).forEach(function(div){
-                div.style.opacity = "1";
-                div.style.marginTop = "0px";
-                div.parentElement.parentElement.style.background = "rgba(0, 0, 0, 0.8)";
-            });
-        }, 100);
-                        
-        document.querySelector("#modal div").innerHTML = divLogin;
+            document.querySelector("#modal").remove();
+        }, 180);
         
-        document.querySelector(".btn-close").addEventListener("click", function(){
-            Array.prototype.slice.call(document.querySelectorAll(".accessUser")).forEach(function(div){
-                div.parentElement.parentElement.style.background = "rgba(0, 0, 0, 0)";
-                div.style.opacity = "0";
-                div.style.marginTop = "35px";
-            });
-            
-            setTimeout(function(){
-                document.querySelector("#modal").remove();
-            }, 300);
-            
-        });
-        
-        document.querySelector("button[name='login-btn']").addEventListener("click", function(){
-            login();
-        });
-        
-        document.querySelector("button[name='cadUser-btn']").addEventListener("click", function(){
-            cadastroUser();
-        });
+    });
 }
 
 function login(){
     var cptLogin = document.querySelector('input[name="login-cpt"]').value;
     var cptSenha = document.querySelector('input[name="senha-cpt"]').value;
+    var btnCad =  document.querySelector("button[name='login-btn']"); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
     
     if((cptLogin == "") || (cptSenha == "")){
+       btnCad.classList.add("btn-error");
+       btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>";
        msgBox(1);
     }else{
         
     }
 }
 
+//FUNÇÃO PARA CADASTRO DE USUÁRIO
 function cadastroUser(){
     var dados = ""; //VARIAVEL CONTENDO TODOS OS DADOS DE CADASTRO BÁSICO
-    var btnCad =  document.querySelector("button[name='cadUser-btn']"); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
+    var btnCad =  document.querySelector("button[name='cadastro-btn']"); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
     
     //ARMAZENANDO OS DADOS DO USUÁRIO
-    Array.prototype.slice.call(document.querySelectorAll('form[name="cadastroUser"] input')).forEach(function(input){
+    Array.prototype.slice.call(document.querySelectorAll('form[name="cadastro"] input')).forEach(function(input){
         dados = dados+input.value+" , ";
     });
     
@@ -145,32 +271,32 @@ function cadastroUser(){
         var dadosJ = {'nome':dados[0], 'nick':dados[1], 'email':dados[2], 'emailConfirm':dados[3], 'senha':dados[4], 'senhaConfirm':dados[5], 'button':'btnCadUser'};
         
         $.ajax({
-            url: "script/user.php",
+            url: base_url+"application/model/usuario/cadUsuario",
             method: "POST",
             data: dadosJ,
             beforeSend: function(){
-                btnCad.innerHTML = "Loading...";
+                btnCad.innerHTML = "Carregando...";
             },
             success: function(){
                 btnCad.classList.remove("btn-error");
                 btnCad.classList.add("btn-success");
                 btnCad.innerHTML = "Cadastro Realizado <img src='imagens/icons/pos1.png' alt=''> ";
-                btnCad.disabled = true;
                 msgBox(3);
+                
+                //ZERA OS INPUTS DO FORMULÁRIO DE CADASTRO
+                Array.prototype.slice.call(document.querySelectorAll('form[name="cadastroUser"] input')).forEach(function(input){
+                    input.value = "";
+                });
             },
             error: function(){
                 btnCad.classList.add("btn-error");
-                btnCad.innerHTML = "Tente Novamente <img src='imagens/icons/error1.png' alt=''>";
-                msgBox(1);
+                btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"/assets/imagens/icons/error1.png' alt=''>";
+                msgBox(2);
             }
-        });
-        
-        Array.prototype.slice.call(document.querySelectorAll('form[name="cadastroUser"] input')).forEach(function(input){
-            input.value = "";
         });
     }else{
         btnCad.classList.add("btn-error");
-        btnCad.innerHTML = "Tente Novamente <img src='imagens/icons/error1.png' alt=''>";
+        btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>";
         msgBox(1);
     }
 }

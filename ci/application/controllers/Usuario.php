@@ -7,7 +7,7 @@ class Usuario extends CI_Controller {
         parent::__construct();
     }
 
-	public function index(){
-		//METODO BASE
+	public function cadUsuario($nome, $nick, $email, $senha){
+		$this->load->models('usuario.php');
 	}
 }

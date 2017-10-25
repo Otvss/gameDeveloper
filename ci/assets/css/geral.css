@@ -35,6 +35,39 @@ a{
     background: #1b1b1b;
 }
 
+.accessTitulo, .msg-box-title{
+    padding: 5px;
+    font-size: 1.5em;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    line-height: 13px;
+}
+
+.accessTitulo small, .msg-box-title small{
+    font-size: 0.5em;
+    color: #cfcfcf;
+}
+
+.accessUser{
+    margin-top: 35px;
+}
+
+.accessUser .control-input{
+    color: #f08600;
+    margin-top: 15px;
+}
+
+.titulo-box{
+    display: flex;
+    padding-left: 5px;
+    border-bottom: 3px solid #cd7200;
+    border-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    align-items: center;
+    background: #f08600;
+}
+
 .banner{
     position: relative;
     width: 100%;
@@ -57,6 +90,12 @@ a{
     margin: 5px;
     align-items: center;
     transition: 0.2s ease-in-out;
+}
+
+.btn-icon{
+    width: 32px;
+    padding: 0px 5px;
+    box-sizing: border-box;
 }
 
 .btn-img1{
@@ -222,6 +261,11 @@ a{
     width: 20%;
 }
 
+.form-control{
+    float: left;
+    width: 90%;
+}
+
 form{
     float: left;
     width: 100%;
@@ -351,10 +395,62 @@ main{
     top: 50px;
 }
 
-.msg-box{
-    width: 600px;
-    margin: 0 auto;
+/* CONFIGURAÇÕES DO MODAL PADRÃO PARA EXIBIR MENSAGENS */
+.modal-padrao{
+    z-index: 9999999999; 
+    display: flex; 
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0px; 
+    left: 0px; 
+    align-items: center; 
+    background: rgba(0, 0, 0, 0.6) 0 0; 
+    transition: 0.2s ease-in-out;
 }
+
+    #msg-box-container{
+        z-index: 999999999; 
+        float: none; 
+        margin: 0 auto; 
+        margin-top: -30px; 
+        opacity: 0; 
+        transition: 0.1s ease-in-out
+    }
+    
+        .msg-box{
+            width: 600px;
+            margin: 0 auto;
+        }
+        
+            .msg-box-title{
+                display: flex;
+                padding: 10px;
+                align-items: center;
+            }
+        
+            .msg-box-desc{
+                padding: 15px;
+            }
+            
+            .msg-box-close{
+                float: none;
+                margin-left: 15px;
+            }
+            
+    /* TIPOS DE MSG-BOX */
+    .msg-box-error{
+        background: #FFF;
+        color: #000;
+        border: 1px solid #FF5034;
+    }
+    
+        .msg-title-error{
+            background: #FF5034; 
+            color: #FFF; 
+            border-bottom: #FF3010;
+        }
+/* FIM DAS CONFIGURAÇÕES DO MODAL PADRÃO */
 
 .nav-bar{
     z-index: 9997;

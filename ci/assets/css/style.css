@@ -1,36 +1,9 @@
-.accessTitulo, .msg-box-title{
-    padding: 5px;
-    font-size: 1.5em;
-    color: #FFF;
-    text-shadow: 1px 1px 1px #000;
-    line-height: 12px;
-    border-bottom: 3px solid #cd7200;
-    border-radius: 3px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background: #f08600;
-}
-
-.accessTitulo small, .msg-box-title small{
-    font-size: 0.5em;
-    color: #cfcfcf;
-}
-
-.accessUser{
-    margin-top: 35px;
-}
-
-.accessUser .control-input{
-    color: #f08600;
-    margin-top: 15px;
-}
-
 button[name="menuLateral"]{
     width: 30px; 
     height: 30px; 
     border: none;
     background: url(../imagens/botoes/menuSymbol.png); 
-    background-position: center; 
+    background-position: center;
 }
 
 .btnAula img{
@@ -45,6 +18,16 @@ button[name="menuLateral"]{
 .btnAula:hover img{
     transform: scale(1.1);
     transition: 0.3s;
+}
+
+.cadLogScreen{
+    background: url(../imagens/fundo/ciri-cadastro-fundo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.cadLogScreen .btn-close{
+    top: 65px;
 }
 
 #lcs{
