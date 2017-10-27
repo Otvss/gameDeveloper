@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Abel|Pacifico" rel="stylesheet"/>
         <link href="<?=base_url('assets/css/style.css')?>" type="text/css" rel="stylesheet"/>
         <link href="<?=base_url('assets/css/geral.css')?>" type="text/css" rel="stylesheet"/> 
+        
         <title>Game Developer</title>
     </head>
     

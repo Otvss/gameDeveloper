@@ -5,9 +5,18 @@ class Usuario extends CI_Controller {
     
     public function __construct(){
         parent::__construct();
+        $this->load->library('form_validation');
+    }
+    
+    public function index(){
+    	
     }
 
 	public function cadUsuario($nome, $nick, $email, $senha){
-		$this->load->models('usuario.php');
+        $this->load->model('Usuario.php/cadUsuario');
+	}
+	
+	public function painelUsuario(){
+	    $this->load->view('painelUsuario.php');
 	}
 }

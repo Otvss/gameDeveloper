@@ -8,7 +8,9 @@ function main(){
     
     main.style.marginLeft = widthMenuLat+"px";
     
-    slide(); //CHAMA AS ANIMAÇÕES DO SLIDE
+    //VERIFICA SE EXISTE ALGUM SLIDE NA TELA E EXECUTA SUA FUNÇÃO
+    if(document.querySelector(".slide"))
+        slide(); //CHAMA AS ANIMAÇÕES DO SLIDE
     
     document.querySelector("#navUser").addEventListener("click", loginScreen); //CHAMAS AS AÇÕES DO DA TELA DE LOGIN
     

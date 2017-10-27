@@ -29,7 +29,13 @@ a{
     color: #FFF;
 }
 
+.accessUser{
+    float: left;
+    width: 100%;
+}
+
 .accessUser, .msg-box{
+    padding: 0px;
     border: 1px solid #f08600;
     border-radius: 3px;
     background: #1b1b1b;
@@ -262,8 +268,10 @@ a{
 }
 
 .form-control{
-    float: left;
+    float: none;
     width: 90%;
+    position: relative;
+    margin: 0 auto;
 }
 
 form{

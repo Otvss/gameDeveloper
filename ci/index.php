@@ -53,6 +53,11 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
+	if(dirname(__FILE__) == '127.0.0.1'){
+		define('ENVIRONMENT', 'development');
+	}else{
+		define('ENVIRONMENT', 'production');
+	}
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
 /*

@@ -23,7 +23,7 @@ function loginScreen(){
     
     //CRIAÇÃO DOS COMPONENTES DA TELA DE CADASTRO E LOGIN
     //TELA DE LOGIN
-    $('<div>',{
+    var login = $('<div>',{
         id: "login",
         class: "col-ds-4 accessUser",
         style: "padding: 0px; opacity: 1; transition: 0.3s ease-in-out",
@@ -92,6 +92,17 @@ function loginScreen(){
                             name: 'login-btn',
                             value: 'Acessar'
                         }).appendTo('#login .form-control').html("Acessar");
+                        
+                        //LOGIN COM FACEBOOK
+                        var fb = $('<div>',{
+                                class: 'fb-login-button',
+                                'data-max-rows': '1',
+                                'data-size': 'large',
+                                'data-button-type': 'login_with',
+                                'data-show-faces': 'false',
+                                'data-auto-logout-link': 'true', 
+                                'data-use-continue-as': 'true'
+                            }).appendTo('#login .form-control')
     
     //TELA DE CADASTRO
     $('<div>',{
@@ -215,7 +226,8 @@ function loginScreen(){
     });
     
     document.querySelector("button[name='cadastro-btn']").addEventListener("click", function(){
-        cadastroUser();
+        //cadastroUser();
+        window.location = "https://gamedeveloper-otvss.c9users.io/ci/index.php/Usuario/cadUsuario";
     });
     
     //AÇÕES DOS BOTÕES DA TELA DE CADASTRO E LOGIN
@@ -240,7 +252,20 @@ function login(){
        btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>";
        msgBox(1);
     }else{
-        
+        $.ajax({
+            url: '',
+            method: 'POST',
+            data: {'login': cptLogin, 'senha': cptSenha},
+            beforeSend: function(){
+                btnCad.html('Verificando...');
+            },
+            success: function(){
+                
+            },
+            error: function(){
+                
+            }
+        });
     }
 }
 
@@ -250,9 +275,11 @@ function cadastroUser(){
     var btnCad =  document.querySelector("button[name='cadastro-btn']"); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
     
     //ARMAZENANDO OS DADOS DO USUÁRIO
-    Array.prototype.slice.call(document.querySelectorAll('form[name="cadastro"] input')).forEach(function(input){
+    Array.prototype.slice.call(document.querySelectorAll('form[name="form-cadastro"] input')).forEach(function(input){
         dados = dados+input.value+" , ";
     });
+    
+    console.log(dados);
     
     var dados = dados.split(" , "); //SEPARANDO OS DADOS PARA ARMAZENAMENTO
     dados.pop(); //REMOVENDO O ÚLTIMO ELEMENTO DESNECESSÁRIO
@@ -268,10 +295,10 @@ function cadastroUser(){
     
     //EMITINDO MENSAGEM INFORMATIVO DO ESTADO DO CADASTRO
     if(dadosPreenchidos == true){
-        var dadosJ = {'nome':dados[0], 'nick':dados[1], 'email':dados[2], 'emailConfirm':dados[3], 'senha':dados[4], 'senhaConfirm':dados[5], 'button':'btnCadUser'};
+        var dadosJ = {'nome':dados[0], 'nick':dados[1], 'email':dados[2], 'senha':dados[4]};
         
         $.ajax({
-            url: base_url+"application/model/usuario/cadUsuario",
+            url: base_url+"application/controllers/Usuario.php",
             method: "POST",
             data: dadosJ,
             beforeSend: function(){
