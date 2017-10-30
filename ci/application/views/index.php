@@ -24,7 +24,7 @@
         
         <!-- MENU LATERAL -->
         <?php include('includes/menuLateral.php') ?>
-        
+
         <main>
             <div class="banner" style="height: 400px">
                 <video src="<?=base_url('assets/imagens/fundo/banner.webm')?>" autoplay loop>Este vídeo não é suportado no seu navegador :(</video>

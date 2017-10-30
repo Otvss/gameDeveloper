@@ -6,7 +6,7 @@ function loginScreen(){
         id: "modal",
         class: "cadLogScreen",
         style: "z-index: 9996; display: flex; position: fixed; width: 100%; height: 0%; top: 0px; left: 0px; align-items: center",
-    }).appendTo('main').html('<button class="btn-close"><img src="'+base_url+'/assets/imagens/icons/close.png"></button>');
+    }).appendTo('body').html('<button class="btn-close"><img src="'+base_url+'/assets/imagens/icons/close.png"></button>');
     
     //CONTAINER QUE POSICIONA OS ITENS DE CADASTRO E LOGIN
     $('<div>', {
@@ -226,8 +226,7 @@ function loginScreen(){
     });
     
     document.querySelector("button[name='cadastro-btn']").addEventListener("click", function(){
-        //cadastroUser();
-        window.location = "https://gamedeveloper-otvss.c9users.io/ci/index.php/Usuario/cadUsuario";
+        cadastroUser();
     });
     
     //AÇÕES DOS BOTÕES DA TELA DE CADASTRO E LOGIN
@@ -298,7 +297,7 @@ function cadastroUser(){
         var dadosJ = {'nome':dados[0], 'nick':dados[1], 'email':dados[2], 'senha':dados[4]};
         
         $.ajax({
-            url: base_url+"application/controllers/Usuario.php",
+            url: base_url+"application/controller/Usuario/cadUsuario",
             method: "POST",
             data: dadosJ,
             beforeSend: function(){

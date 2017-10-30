@@ -24,7 +24,7 @@ body{
 
 a{
     display: block;
-    padding: 5px;
+    padding: 5px 0px;
     text-decoration: none;
     color: #FFF;
 }
@@ -37,7 +37,7 @@ a{
 .accessUser, .msg-box{
     padding: 0px;
     border: 1px solid #f08600;
-    border-radius: 3px;
+    border-radius-top: 3px;
     background: #1b1b1b;
 }
 
@@ -83,11 +83,27 @@ a{
     top: 0px;
 }
 
-.banner video{
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #000;
-}
+    .banner video{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #000;
+    }
+    
+    .banner-desc{
+        z-index: 2;
+        display: block;
+        width: 100%;
+        padding: 200px 0px;
+        text-align: center;
+        background-size: 100% 100% !important; 
+        background-attachment: fixed !important;
+        background-opacity: 0.3;
+    }
+    
+        .banner-desc h2{
+            font-size: 1em;
+            color: #cfcfcf;
+        }
 
 .btn{
     float: left;
@@ -210,16 +226,20 @@ a{
     border-radius: 3px;
 }
 
+.container-fluid{
+    float: left;
+    width: 100%;
+}
+
 .control-input{
     float: left;
     width: 100%;
     border-radius: 3px;
 }
 
-.col-ds-12, .col-sm-11, .col-ds-10, .col-ds-9, .col-ds-8, .col-ds-7, .col-ds-6, .col-ds-5, .col-ds-4, .col-ds-3, .col-ds-2-4 {
+.col-ds-12, .col-sm-11, .col-ds-10, .col-ds-9, .col-ds-8, .col-ds-7, .col-ds-6, .col-ds-5, .col-ds-4, .col-ds-3, .col-ds-2-4, .col-ds-2, .col-ds-1 {
     float: left;
-    padding: 5px 5px;
-    margin: 0px 0px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -267,6 +287,14 @@ a{
     width: 20%;
 }
 
+.col-ds-2 {
+  width: 16.66666667%;
+}
+
+.col-ds-1 {
+  width: 8.33333333%;
+}
+
 .form-control{
     float: none;
     width: 90%;
@@ -286,7 +314,7 @@ form input:focus{
 
 footer{
     float: left;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     margin-top: 15px;
     border-top: 1px solid #000;
@@ -397,8 +425,15 @@ input{
     text-align: left;
 }
 
-main{
+.kw{
     float: left;
+    margin-right: 5px;
+    color: #97cdfe;
+}
+
+
+main{
+    float: none;
     margin: 0 auto;
     top: 50px;
 }
@@ -459,6 +494,10 @@ main{
             border-bottom: #FF3010;
         }
 /* FIM DAS CONFIGURAÇÕES DO MODAL PADRÃO */
+
+.mg-lat-10{
+    margin: 0px 10px;
+}
 
 .nav-bar{
     z-index: 9997;
