@@ -30,6 +30,10 @@ button[name="menuLateral"]{
     top: 65px;
 }
 
+.jssocials-share-link{
+    border-radius: 50%;
+}
+
 #lcs{
     height: 315px;
     max-height: 315px;

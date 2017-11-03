@@ -9,11 +9,15 @@
         <script src="<?=base_url('assets/script/slide.js') ?>" type="text/javascript"></script>
         <script src="<?=base_url('assets/script/loginScreen.js') ?>" type="text/javascript"></script>
         <script src="<?=base_url('assets/script/msgBox.js') ?>" type="text/javascript"></script>
+        <script src="<?=base_url('assets/script/jssocials.min.js') ?>" type="text/javascript"></script>
         
         <!-- CSS-->
         <link href="https://fonts.googleapis.com/css?family=Abel|Pacifico" rel="stylesheet"/>
         <link href="<?=base_url('assets/css/style.css')?>" type="text/css" rel="stylesheet"/>
-        <link href="<?=base_url('assets/css/geral.css')?>" type="text/css" rel="stylesheet"/> 
+        <link href="<?=base_url('assets/css/geral.css')?>" type="text/css" rel="stylesheet"/>
+        <link href="<?=base_url('assets/css/font-awesome.css')?>" type="text/css" rel="stylesheet"/>
+        <link href="<?=base_url('assets/css/jssocials.css')?>" type="text/css" rel="stylesheet"/>
+        <link href="<?=base_url('assets/css/jssocials-theme-flat.css')?>" type="text/css" rel="stylesheet"/>
         
         <title>Nome Aula</title>
     </head>
@@ -25,17 +29,16 @@
         <!-- MENU LATERAL -->
         <?php include('includes/menuLateral.php') ?>
         
-        <main style="float: none; margin: 0 auto">
+        <main>
             <!-- APRESENTAÇÃO DA AULA -->
             <div class="banner" style="400px">
                 <div class="banner-desc" style="background: url(<?=base_url('assets/imagens/usuario/aula/padraoAula.png')?>)">
                     <h2>Nome do Colaborador</h2>
                     <h1>Nome da Respectiva Aula Aberta</h1>
+                    <div class="share"></div>
                 </div>
             </div>
             
-            
-        
             <!-- AULA EM VIDEO -->
             <div class="container-fixed">
                 <div class="row" style="background: #1b1b1b; border: 1px solid #000">
@@ -47,7 +50,25 @@
                         <h1>Nome da aula</h1>
                         <p style="color: #cfcfcf;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet commodo risus, nec vulputate augue ultrices vel. Donec malesuada finibus tellus, id consequat risus lobortis a. Quisque et nisi magna. Phasellus auctor diam enim, vel ultricies lacus malesuada nec.</p>
                         
+                        <div class="col-ds-6">
+                            <img src="" alt="">
+                            <h2>Nome do Colaborador</h2>
+                            <button>SEGUIR</button>
+                        </div>
+                        
+                        <div class="col-ds-6">
+                            <p>Avaliação da Aula:</p>
+                            <input class="btn-aval" type="radio" value="1">
+                            <input class="btn-aval" type="radio" value="2">
+                            <input class="btn-aval" type="radio" value="3">
+                            <input class="btn-aval" type="radio" value="4">
+                            <input class="btn-aval" type="radio" value="5">
+                            </div>
+                        </div>
+                        
                         <div class="col-ds-12">
+                            <div class="share"></div>
+                            
                             <p style="color: #FFF">Palavras-Chave:</p>
                             <a class="kw" href="">teste</a>
                             <a class="kw" href="">teste 2</a>
@@ -70,18 +91,6 @@
                         <div class="col-ds-12">
                             <h3>Arquivos para Download:</h3>
                             <p>Nenhum arquivo disponivel para download!</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-ds-3">
-                        <div class="row">
-                            <div class="col-ds-12" style="float: right; height: 100%; background: #1b1b1b; border: 1px solid #000;">
-                                <h2>Aula Seguinte:</h2>
-                            </div>
-                        
-                            <div class="col-ds-12" style="float: right; height: 100%; background: #1b1b1b; border: 1px solid #000;">
-                                <h2>Aulas Relacionadas:</h2>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,6 +127,12 @@
             <?php include('includes/footer.php'); ?>
         </main>
         
+        <script>
+            $(".share").jsSocials({
+                shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "whatsapp"],
+                showLabel: false,
+            });
+        </script>
         <script id="dsq-count-scr" src="//gamedevelopers.disqus.com/count.js" async></script>
     </body>
 </html>

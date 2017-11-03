@@ -31,7 +31,7 @@
             </div>
             
             <div class="container-fixed">
-                <div class="row" style="background: #1b1b1b; box-shadow: -1px 1px 1px #000; border: 1px solid #000">
+                <div class="row">
                     <div class="col-ds-12">
                         <h1 class="titulo-janela">destaque<span style="color: #FFF">Semanal</span></h1>
                     </div>
@@ -76,7 +76,7 @@
                     </div>
                     
                     <div id="not-sec" class="col-ds-6">
-                        <div class="col-ds-12" style="background: #1b1b1b; border: 1px solid #2b2b2b">
+                        <div class="col-ds-12 bloco">
                             <a href="#">
                                 <div class="col-ds-3">
                                     <img class="img-resp" src="<?=base_url('assets/imagens/noticias/not1.png')?>" alt="" title="Titulo da Noticia">
@@ -88,7 +88,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-ds-12" style="background: #1b1b1b; border: 1px solid #2b2b2b">
+                        <div class="col-ds-12 bloco">
                             <a href="#">
                                 <div class="col-ds-3">
                                     <img class="img-resp" src="<?=base_url('assets/imagens/noticias/not1.png')?>" alt="" title="Titulo da Noticia">
@@ -100,7 +100,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-ds-12" style="background: #1b1b1b; border: 1px solid #2b2b2b">
+                        <div class="col-ds-12 bloco">
                             <a href="#">
                                 <div class="col-ds-3">
                                     <img class="img-resp" src="<?=base_url('assets/imagens/noticias/not1.png')?>" alt="" title="Titulo da Noticia">
@@ -117,13 +117,13 @@
             </div>
             
             <div class="container-fixed">
-                <div class="col-ds-12" style="background: #1b1b1b; box-shadow: -1px 1px 1px #000; border: 1px solid #000">
+                <div class="col-ds-12 bloco">
                     <div class="col-ds-12">
                         <h1 class="titulo-janela">mais<span style="color: #FFF">Visualizadas</span></h1>
                     </div>
                     
                     <div class="col-ds-2-4 btnAula item-preview">
-                        <a href="#">
+                        <a href="index.php/Aula/visAula">
                             <div>
                                 <p class="btn-click">
                                     clique para<br>
@@ -332,7 +332,7 @@
             </div>
             
             <div class="container-fixed">
-                <div class="row" style="background: #1b1b1b; box-shadow: -1px 1px 1px #000; border: 1px solid #000">
+                <div class="row bloco">
                     <div class="col-ds-12">
                         <h1>Torne-se um Colaborador!</h1>
                         <p>Cadastre-se para poder postar suas aulas e visualizar aulas de nivel avançado.</p>
