@@ -11,4 +11,9 @@ class Page extends CI_Controller {
 	public function index(){
 		$this->load->view('index.php');
 	}
+	
+	//CARREGA A PÁGINA PRINCIPAL - PROGRAMAS
+	public function programas(){
+		$this->load->view('programas.php');
+	}
 }
