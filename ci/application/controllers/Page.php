@@ -7,13 +7,11 @@ class Page extends CI_Controller {
         parent::__construct();
     }
 
-    //CARREGA A PÁGINA PRINCIPAL - INDEX
 	public function index(){
-		$this->load->view('index.php');
+		$this->load->view('index');
 	}
 	
-	//CARREGA A PÁGINA PRINCIPAL - PROGRAMAS
 	public function programas(){
-		$this->load->view('programas.php');
+		$this->load->view('programas');
 	}
 }

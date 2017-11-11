@@ -15,7 +15,7 @@
             <ul>
                 <li>
                     <button class="btn-img1" name="menuLateral"></button>
-                    <a class="btn-img1" href="index.html" style="width: auto"><img src="<?=base_url('assets/imagens/botoes/logotipo.png')?>" alt="game developer"></a>
+                    <a class="btn-img1" href="<?=base_url()?>" style="width: auto"><img src="<?=base_url('assets/imagens/botoes/logotipo.png')?>" alt="game developer"></a>
                 </li>
                 <li>
                     <div class="control-input" style="border: 1px solid #000; background: #FFF;">

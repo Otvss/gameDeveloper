@@ -76,7 +76,7 @@ function loginScreen(){
                         //SENHA
                         $('<input>',{
                             type: "password",
-                            name: "senha-cpt",
+                            name: "senha-psw",
                             placeholder: "Digite entre 8 à 12 caracteres",
                         }).appendTo('.cilg1 label');
                         
@@ -221,12 +221,12 @@ function loginScreen(){
     modal.animate({height: '100%'}, 150);
     
     //AÇÃO DOS BOTÕES
-    document.querySelector("button[name='login-btn']").addEventListener("click", function(){
-        login();
+    $('button[name="login-btn"]').click(function(){
+        logarUsuario();
     });
     
     document.querySelector("button[name='cadastro-btn']").addEventListener("click", function(){
-        cadastroUser();
+        cadastrarUsuario();
     });
     
     //AÇÕES DOS BOTÕES DA TELA DE CADASTRO E LOGIN
@@ -237,39 +237,44 @@ function loginScreen(){
         setTimeout(function(){
             document.querySelector("#modal").remove();
         }, 180);
-        
     });
 }
 
-function login(){
-    var cptLogin = document.querySelector('input[name="login-cpt"]').value;
-    var cptSenha = document.querySelector('input[name="senha-cpt"]').value;
-    var btnCad =  document.querySelector("button[name='login-btn']"); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
+//FUNÇÃO DE LOGIN
+function logarUsuario(){
+    var cptLogin = $('form[name="form-login"] input[name="login-cpt"]').val();
+    var cptSenha = $('form[name="form-login"] input[name="senha-psw"]').val();;
+    var btnCad =  $('button[name="login-btn"]'); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
     
     if((cptLogin == "") || (cptSenha == "")){
-       btnCad.classList.add("btn-error");
-       btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>";
+       btnCad.addClass("btn-error");
+       btnCad.html("Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>");
        msgBox(1);
     }else{
         $.ajax({
-            url: '',
             method: 'POST',
             data: {'login': cptLogin, 'senha': cptSenha},
+            url: base_url+"index.php/Login/auth",
             beforeSend: function(){
                 btnCad.html('Verificando...');
             },
-            success: function(){
-                
+            success: function(result){
+                if(result == 'encontrado'){
+                    usuario = true;
+                    window.location.replace(base_url+'index.php/Usuario/painelUsuario');    
+                }else{
+                    msgBox(2);
+                }
             },
             error: function(){
-                
+                msgBox(2);
             }
         });
     }
 }
 
 //FUNÇÃO PARA CADASTRO DE USUÁRIO
-function cadastroUser(){
+function cadastrarUsuario(){
     var dados = ""; //VARIAVEL CONTENDO TODOS OS DADOS DE CADASTRO BÁSICO
     var btnCad =  document.querySelector("button[name='cadastro-btn']"); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
     
@@ -277,8 +282,6 @@ function cadastroUser(){
     Array.prototype.slice.call(document.querySelectorAll('form[name="form-cadastro"] input')).forEach(function(input){
         dados = dados+input.value+" , ";
     });
-    
-    console.log(dados);
     
     var dados = dados.split(" , "); //SEPARANDO OS DADOS PARA ARMAZENAMENTO
     dados.pop(); //REMOVENDO O ÚLTIMO ELEMENTO DESNECESSÁRIO
@@ -323,6 +326,18 @@ function cadastroUser(){
     }else{
         btnCad.classList.add("btn-error");
         btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>";
-        msgBox(1);
+        msgBox(2);
+    }
+}
+
+//ALTERAÇÕES BÁSICAS NO SITE CASO O USUÁRIO ESTEJA LOGADO
+function alterarTelasB(usuario){
+    //LINK PARA PAINEL DE CADASTRO E LOGIN / PAINEL DO USUÁRIO
+    if(usuario){
+        var btnAcesso = $('#navUser');
+        btnAcesso.off();
+        btnAcesso.attr('href', base_url+'index.php/Usuario/painelUsuario');
+    }else{
+        document.querySelector("#navUser").addEventListener("click", loginScreen); //CHAMAS AS AÇÕES DO DA TELA DE LOGIN
     }
 }

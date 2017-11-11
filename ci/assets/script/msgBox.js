@@ -178,16 +178,17 @@ function msgBox(msg){
         
         //CONFIRMAÇÃO DE CADASTRO
         case 3:
-            msgBox.style = "background: #FFF; color: #000; border: 1px solid #309931"; 
+            msgBox.addClass('msg-box-confirmed'); 
             
-            boxTitle.innerHTML = "Conta Criada com Sucesso!";
-            boxTitle.style = "padding: 10px; background: #2EB265; color: #FFF; border-bottom: #309931";
+            boxTitle.html("Conta Criada com Sucesso!");
+            boxTitle.addClass('msg-title-confirmed');
            
-            boxDesc.innerHTML = "Basta agora acessar seu email e confirmar o cadastro =)<br>"
-                                                                +"<strong>Lembre-se: </strong>Na página da sua conta possui outros dados para serem preenchidos<br>"
-                                                                +"que darão acesso à compra da moeda do site para visualização de aulas de nível avançado!";
+            boxDesc.html("Basta agora acessar seu email e confirmar o cadastro =)<br>"
+                          +"<strong>Lembre-se: </strong>Na página da sua conta possui outros dados para serem preenchidos<br>"
+                          +"que darão acesso à compra da moeda do site para visualização de aulas de nível avançado!");
         
-            boxClose.innerHTML = "Fechar";
+            boxClose.html("Fechar");
+            boxClose.addClass("btn-success");
         break;
     }
     
@@ -197,6 +198,7 @@ function msgBox(msg){
     });
 }
 
+//ENCERRAR A EXIBIÇÃO DA MENSAGEM
 function msgBoxClose(boxContainer, modal){
     boxContainer.css({'transition':'0.1s ease-in-out', 'margin-top':'-30px', 'opacity':'0'});
     modal.css({'transition':'0.3s ease-in-out', 'background':'rgba(0, 0, 0, 0.0)'});

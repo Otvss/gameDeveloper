@@ -61,6 +61,8 @@
                                         <li>
                                             <a href="">Alterar Dados dos Cartões</a>
                                         </li>
+                                        
+                                        <li><a href="<?=base_url('index.php/Login/logout')?>">Sair</a></li>
                                     </ul>
                                 </div>
                             </div>

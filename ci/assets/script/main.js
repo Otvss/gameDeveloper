@@ -5,17 +5,20 @@ function main(){
     var widthWindow = window.innerWidth;
     var widthMenuLat = document.querySelector("#menuLateral").offsetWidth;
     var base_url = "https://gamedeveloper-otvss.c9users.io/ci/";
+    localStorage.setItem('usuario', false);
+    var usuario = localStorage.getItem('usuario');
     
     main.style.marginLeft = widthMenuLat+"px";
+    
+    //ALTERAR TELAS DE ACORDO COM O ESTADO DO SITE
+    alterarTelasB(usuario);
     
     //VERIFICA SE EXISTE ALGUM SLIDE NA TELA E EXECUTA SUA FUNÇÃO
     if(document.querySelector(".slide"))
         slide(); //CHAMA AS ANIMAÇÕES DO SLIDE
     
-    document.querySelector("#navUser").addEventListener("click", loginScreen); //CHAMAS AS AÇÕES DO DA TELA DE LOGIN
-    
+    //EFEITO DO MENU LATERAL
     document.querySelector("button[name='menuLateral']").addEventListener("click", function(){
-        
         if(control == 0){
             menuLateral.style.display = "none";
             control++;
@@ -26,6 +29,7 @@ function main(){
             main.style.marginLeft = widthMenuLat+"px";
         }
     });
+    
 }
 
 window.onload = main;

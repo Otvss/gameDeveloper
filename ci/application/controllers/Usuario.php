@@ -2,24 +2,24 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Usuario extends CI_Controller {
+    private $id, $nome, $nick, $email;
     
-    public function __construct(){
+    public function __construct($id, $nome, $nick, $email){
         parent::__construct();
-        $this->load->library('form_validation');
+        
+        $this->id = $id;
+        $this->nome = $nome;
+        $this->nick = $nick;
+        $this->email = $email;
     }
-
-	public function cadUsuario($nome, $nick, $email, $senha){
-	    $data = array(
-	        'nome'=>$nome,
-	        'nick'=>$nick,
-	        'email'=>$email,
-	        'senha'=>$senha
-	    );
-	    
-        $this->load->model('Usuario.php/cadUsuario', $data);
+	
+	//CONTROLE PARA O ACESSO AO PAINEL DO USUÁRIO CASO O MESMO JA ESTEJA LOGADO
+	public function painelUsuario(){
+		$this->load->view('painelUsuario');
 	}
 	
-	public function painelUsuario(){
-	    $this->load->view('painelUsuario.php');
+	//CADASTRO DO USUARIO
+	public function cadastrar(){
+		
 	}
 }

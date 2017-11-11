@@ -506,6 +506,16 @@ main{
             color: #FFF; 
             border-bottom: #FF3010;
         }
+        
+    .msg-box-confirmed{
+        color: #000; 
+        border: 1px solid #309931;
+        background: #FFF; 
+    }
+    
+        .msg-title-confirmed{
+            background: #309931;
+        }
 /* FIM DAS CONFIGURAÇÕES DO MODAL PADRÃO */
 
 .mg-lat-10{

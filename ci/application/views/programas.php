@@ -33,10 +33,6 @@
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusest laborum."</p>
                 </div>
             </div>
-        
-            <div>
-                
-            </div>
             
             <!-- RODAPÉ -->
             <?php include('includes/footer.php'); ?>
