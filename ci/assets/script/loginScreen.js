@@ -1,4 +1,4 @@
-var base_url = "https://gamedeveloper-otvss.c9users.io/ci/";
+var base_url = "https://projeto-tcc-gutem77.c9users.io/ci/";
 
 function loginScreen(){
     //MODAL DA TELA DE CADASTRO E LOGIN
@@ -246,11 +246,11 @@ function logarUsuario(){
     var cptSenha = $('form[name="form-login"] input[name="senha-psw"]').val();;
     var btnCad =  $('button[name="login-btn"]'); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
     
-    if((cptLogin == "") || (cptSenha == "")){
+    /*if((cptLogin == "") || (cptSenha == "")){
        btnCad.addClass("btn-error");
        btnCad.html("Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>");
        msgBox(1);
-    }else{
+    }else{*/
         $.ajax({
             method: 'POST',
             data: {'login': cptLogin, 'senha': cptSenha},
@@ -270,7 +270,7 @@ function logarUsuario(){
                 msgBox(2);
             }
         });
-    }
+    //}
 }
 
 //FUNÇÃO PARA CADASTRO DE USUÁRIO
@@ -333,11 +333,11 @@ function cadastrarUsuario(){
 //ALTERAÇÕES BÁSICAS NO SITE CASO O USUÁRIO ESTEJA LOGADO
 function alterarTelasB(usuario){
     //LINK PARA PAINEL DE CADASTRO E LOGIN / PAINEL DO USUÁRIO
-    if(usuario){
+    /*if(usuario){
         var btnAcesso = $('#navUser');
         btnAcesso.off();
         btnAcesso.attr('href', base_url+'index.php/Usuario/painelUsuario');
-    }else{
+    }else{*/
         document.querySelector("#navUser").addEventListener("click", loginScreen); //CHAMAS AS AÇÕES DO DA TELA DE LOGIN
-    }
+    //}
 }

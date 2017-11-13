@@ -681,3 +681,19 @@ input:active, input:focus{
     color: #ff6905;
     text-decoration: underline;
 }
+
+/*PAGINA PROGRAMAS*/
+.img-prog1{
+    height: 200px;
+    width: 400px;
+}
+
+.img-prog2{
+    float: right;
+    height: 200px;
+    width: 400px;
+}
+
+.paragrafo{
+    color: white;
+}
