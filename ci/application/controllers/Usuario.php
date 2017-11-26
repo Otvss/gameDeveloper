@@ -60,4 +60,28 @@ class Usuario extends CI_Controller {
 	    $this->session->unset_userdata('usuario'); //EXCLUI A SESSION REALIZANDO O LOGOFF
 	    redirect($base_url, 'refresh'); //REDIRECIONA PARA A PÁGINA PRINCIPAL
 	}
-}
+
+
+//EXIBE OS DADOS CADASTRAIS DO USUÁRIO
+	public function visualizarDados(){
+		if(isset($this->session->userdata)){
+			$dados = array($this->session->userdata('nome'),
+							$this->session->userdata('nick'),
+							$this->session->userdata('email'));
+			
+			echo json_encode($dados);
+		}
+	}
+	
+	public function atualizarDados(){
+		$nick = $this->input->post('nick');
+	    $nome = $this->input->post('nome');
+	    $email = $this->input->post('email');
+	    
+	    $this->load->model('Usuariodao'); //CARREGA A CLASSE DO ARQUIVO USUARIODAO DA PASTA MODEL
+	    
+	    $usrdao = $this->Usuariodao; //ATRIBUI A CLASSE CARREGADA A VARIAVEL USRDAO
+	    
+	    $usrdao->atualizarDados($nome, $nick, $email); //EXECUTA O METODO ENVIANDO OS DADOS A SEREM VERIFICADOS NO BANCO
+	}
+	}
