@@ -202,14 +202,14 @@ function msgBox(msg){
         case 4:
             msgBox.addClass('msg-box-alert'); 
             
-            boxTitle.html("Email Já Cadastrado!");
+            boxTitle.html("Email/Nick Já Cadastrado!");
             boxTitle.addClass('msg-title-alert');
            
-            boxDesc.html("O email inserido ja está cadastrado no site\n"
-                          +"Caso tenha esquecido a senha <a href='#' style='color: #2375FF'>http://www.gamedeveloper.com.br/contato</a>");
+            boxDesc.html("O email/nick inserido ja está cadastrado no site\n"
+                          +"Caso tenha esquecido a senha: <a href='#' style='color: #2375FF'>http://www.gamedeveloper.com.br/contato</a>");
         
             boxClose.html("Fechar");
-            boxClose.removeClass();
+            boxClose.addClass("btn-alert")
         break;
         
         case 5:

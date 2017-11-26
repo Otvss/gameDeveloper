@@ -5,7 +5,6 @@ function main(){
     var widthWindow = window.innerWidth;
     var widthMenuLat = document.querySelector("#menuLateral").offsetWidth;
     var base_url = "https://gamedeveloper-otvss.c9users.io/ci/";
-    localStorage.setItem('usuario', false);
     var usuario = localStorage.getItem('usuario');
     
     main.style.marginLeft = widthMenuLat+"px";

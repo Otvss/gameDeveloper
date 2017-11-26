@@ -306,7 +306,6 @@ function cadastrarUsuario(){
                 btnCad.innerHTML = "Carregando...";
             },
             success: function(result){
-                alert(result);
                 if(result == "true"){
                     btnCad.classList.remove("btn-error");
                     btnCad.classList.add("btn-success");
@@ -316,7 +315,7 @@ function cadastrarUsuario(){
                     //ZERA OS INPUTS DO FORMULÁRIO DE CADASTRO
                     $('form[name="form-cadastro"]').val("");
                 }else{
-                    btnCad.classList.add("btn-alert");
+                    btnCad.classList.add("btn-error");
                     btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"/assets/imagens/icons/error1.png' alt=''>";
                     msgBox(4);
                 }

@@ -33,10 +33,14 @@
             $dados = array('nm_usuario'=>$nome,
                             'ds_emailUsuario'=>$email,
                             'tp_usuario'=>$tp,
-                            'cd_usuario'=>$senha,
+                            'cd_senhaUsuario'=>$senha,
                             'nm_nickUsuario'=>$nick);
-                            
+            
+            //DEFINE QUAL DADO DADO DEVE SER PEGO               
             $this->db->where("ds_emailUsuario", $email);
+            $this->db->or_where("nm_nickUsuario", $nick);
+            
+            //VERIFICA NO BANCO SE EXISTE ALGUEM QUE ATENDA AS DEFINIÇÕES DE BUSCA
             $verEmail = $this->db->get('Usuario')->row_array();
             
             if($verEmail){
