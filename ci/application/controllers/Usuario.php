@@ -34,6 +34,27 @@ class Usuario extends CI_Controller {
 	    $verUsuario = $usrdao->getUser($login, $senha); //EXECUTA O METODO ENVIANDO OS DADOS A SEREM VERIFICADOS NO BANCO
 	}
 	
+	//CADASTRO DO USUARIO
+	public function cadastrarUsuario(){
+	    //PEGANDO DADOS DO POST
+		$nome = $this->input->post('nome');
+		$nick = $this->input->post('nick');
+		$tp = "colab"; //VALOR PADRÃO DE CADASTRO FEITO PELO SITE
+		$email = $this->input->post('email');
+		$senha = $this->input->post('senha');
+		$status = "ival"; //VALIDAÇÃO DE CONTA VIA EMAIL (FAZER FUTURAMENTE)
+		
+		require_once APPPATH."models/UsuarioModel.php";
+		
+		$this->load->model('usuariodao');
+		
+		//VERIFICA SE O USUÁRIO FOI CADASTRADO
+		$insert = $this->usuariodao;
+		
+		$insert->cadUser($nome, $nick, $tp, $email, $senha);
+	}
+
+	
 	//ENCERRA O LOGIN DO USUÁRIO
 	public function logout(){
 	    $this->session->unset_userdata('usuario'); //EXCLUI A SESSION REALIZANDO O LOGOFF

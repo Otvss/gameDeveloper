@@ -27,5 +27,25 @@
                 echo false; //CASO NÃO EXISTA O USUÁRIO
             }
         }
+        
+        //CADASTRAR USUARIO
+        public function cadUser($nome, $nick, $tp, $email, $senha){
+            $dados = array('nm_usuario'=>$nome,
+                            'ds_emailUsuario'=>$email,
+                            'tp_usuario'=>$tp,
+                            'cd_usuario'=>$senha,
+                            'nm_nickUsuario'=>$nick);
+                            
+            $this->db->where("ds_emailUsuario", $email);
+            $verEmail = $this->db->get('Usuario')->row_array();
+            
+            if($verEmail){
+                echo "false";
+            }
+            else{
+                $this->db->insert('Usuario', $dados);
+                echo "true";
+            }
+        }
     }
 ?>
