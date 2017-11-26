@@ -53,26 +53,8 @@ class Usuario extends CI_Controller {
 		
 		$insert->cadUser($nome, $nick, $tp, $email, $senha);
 	}
-
 	
-	//ENCERRA O LOGIN DO USUÁRIO
-	public function logout(){
-	    $this->session->unset_userdata('usuario'); //EXCLUI A SESSION REALIZANDO O LOGOFF
-	    redirect($base_url, 'refresh'); //REDIRECIONA PARA A PÁGINA PRINCIPAL
-	}
-
-
-//EXIBE OS DADOS CADASTRAIS DO USUÁRIO
-	public function visualizarDados(){
-		if(isset($this->session->userdata)){
-			$dados = array($this->session->userdata('nome'),
-							$this->session->userdata('nick'),
-							$this->session->userdata('email'));
-			
-			echo json_encode($dados);
-		}
-	}
-	
+	//ATUALIZA OS DADOS DO USUARIO
 	public function atualizarDados(){
 		$nick = $this->input->post('nick');
 	    $nome = $this->input->post('nome');
@@ -84,4 +66,22 @@ class Usuario extends CI_Controller {
 	    
 	    $usrdao->atualizarDados($nome, $nick, $email); //EXECUTA O METODO ENVIANDO OS DADOS A SEREM VERIFICADOS NO BANCO
 	}
+	
+	//EXIBE OS DADOS CADASTRAIS DO USUÁRIO
+	public function visualizarDados(){
+		if(isset($this->session->userdata)){
+			$dados = array($this->session->userdata('nome'),
+							$this->session->userdata('nick'),
+							$this->session->userdata('email'));
+			
+			echo json_encode($dados);
+		}
 	}
+
+	
+	//ENCERRA O LOGIN DO USUÁRIO
+	public function logout(){
+	    $this->session->sess_destroy(); //EXCLUI A SESSION REALIZANDO O LOGOFF
+	    redirect($base_url, 'refresh'); //REDIRECIONA PARA A PÁGINA PRINCIPAL
+	}
+}

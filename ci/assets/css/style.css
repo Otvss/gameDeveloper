@@ -82,7 +82,7 @@ button[name="menuLateral"]{
     font-size: 1.2em;
 }
 
-#navUser{
+#navUser, #nav-log{
     display: table;
     float: right;
     padding: 10px;
@@ -90,7 +90,7 @@ button[name="menuLateral"]{
     font-weight: bold;
 }
 
-#navUser h3{
+#navUser h3, #nav-log h3{
     display: table-cell;
     margin: 0px;
     font-size: 1em;
@@ -136,4 +136,18 @@ button[name="menuLateral"]{
 
 #not-sec .col-ds-12:nth-child(2){
     margin: 5px 0px;
+}
+
+.aulaText p{
+    font-size: 1.2em;
+    margin: 10px 0px;
+    color: #FFF;
+}
+
+    .aulaText p::first-letter{
+        margin-left: 1em;
+    }
+
+.aulaText h2{
+    color: #f08600;
 }

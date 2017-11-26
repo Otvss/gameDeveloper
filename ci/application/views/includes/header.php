@@ -32,13 +32,36 @@
             </ul>
             
             <!-- MENU DO USUÁRIO -->
-            <a href="#" id="navUser">
-                <img src="<?=base_url('assets/imagens/usuario/icons/padrao.png')?>" alt="">
-                <h3>
-                    SEJA BEM-VINDO, <span style="color: #f08600">USUÁRIO</span><br>
-                    <small style="color: #cfcfcf">Faça o cadastro / login</small>    
-                </h3>
-            </a>
+            <div style="width: 200px; float: right;">
+                <?php
+                    if(isset($this->session->userdata['nome'])){
+                ?>
+                        <div widht="float: left; width: 100%">
+                            <a href="<?=base_url('index.php/Usuario/painelUsuario')?>" id="nav-log">
+                                <img src="<?=base_url('assets/imagens/botoes/sobreNosImg.png')?>" alt="">
+                                <h3>
+                                    SEJA BEM-VINDO, <span style="color: #f08600"><?=$this->session->userdata['nick']?></span><br>
+                                </h3>
+                            </a>
+                            
+                            <br>
+                            
+                            <a href="<?=base_url('index.php/Usuario/logout')?>" style="position: absolute; bottom: -5px; right: 70px">Sair</a>
+                        </div>
+                <?php
+                    }else{
+                ?>
+                    <div widht="float: left; width: 100%">
+                        <a href="#" id="navUser">
+                            <img src="<?=base_url('assets/imagens/usuario/icons/padrao.png')?>" alt="">
+                            <h3>
+                                SEJA BEM-VINDO, <span style="color: #f08600">USUÁRIO</span><br>
+                                <small style="color: #cfcfcf">Faça o cadastro / login</small>    
+                            </h3>
+                        </a>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
     </nav>
 </header>

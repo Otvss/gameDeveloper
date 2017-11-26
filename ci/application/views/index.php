@@ -123,7 +123,7 @@
                     </div>
                     
                     <div class="col-ds-2-4 btnAula item-preview">
-                        <a href="index.php/Aula/visAula">
+                        <a href="Aula/carregarAula/1">
                             <div>
                                 <p class="btn-click">
                                     clique para<br>

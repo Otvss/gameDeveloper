@@ -889,3 +889,204 @@
 [25-Nov-2017 18:07:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
 [25-Nov-2017 18:07:03 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
 [25-Nov-2017 18:07:03 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[26-Nov-2017 15:48:45 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:48:45 UTC] PHP Stack trace:
+[26-Nov-2017 15:48:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:48:45 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:48:45 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:48:45 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:48:45 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:19
+[26-Nov-2017 15:49:47 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:49:47 UTC] PHP Stack trace:
+[26-Nov-2017 15:49:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:49:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:49:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:49:47 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:49:47 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:19
+[26-Nov-2017 15:50:01 UTC] PHP Fatal error:  Call to a member function carregarAula() on a non-object in /home/ubuntu/workspace/ci/application/controllers/Aula.php on line 19
+[26-Nov-2017 15:50:01 UTC] PHP Stack trace:
+[26-Nov-2017 15:50:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:50:01 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:50:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:50:01 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:50:25 UTC] PHP Fatal error:  Call to undefined function visAula() in /home/ubuntu/workspace/ci/application/controllers/Aula.php on line 22
+[26-Nov-2017 15:50:25 UTC] PHP Stack trace:
+[26-Nov-2017 15:50:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:50:25 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:50:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:50:25 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:51:06 UTC] PHP Fatal error:  Call to undefined function visAula() in /home/ubuntu/workspace/ci/application/controllers/Aula.php on line 22
+[26-Nov-2017 15:51:06 UTC] PHP Stack trace:
+[26-Nov-2017 15:51:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:51:06 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:51:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:51:06 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:51:47 UTC] PHP Fatal error:  Call to undefined function visAula() in /home/ubuntu/workspace/ci/application/controllers/Aula.php on line 22
+[26-Nov-2017 15:51:47 UTC] PHP Stack trace:
+[26-Nov-2017 15:51:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:51:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:51:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:51:47 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:51:58 UTC] PHP Fatal error:  Call to undefined function visAula() in /home/ubuntu/workspace/ci/application/controllers/Aula.php on line 22
+[26-Nov-2017 15:51:58 UTC] PHP Stack trace:
+[26-Nov-2017 15:51:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:51:58 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:51:58 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:51:58 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:52:02 UTC] PHP Fatal error:  Call to undefined function visAula() in /home/ubuntu/workspace/ci/application/controllers/Aula.php on line 22
+[26-Nov-2017 15:52:02 UTC] PHP Stack trace:
+[26-Nov-2017 15:52:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:52:02 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:52:02 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:52:02 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:53:57 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:53:57 UTC] PHP Stack trace:
+[26-Nov-2017 15:53:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:53:57 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:53:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:53:57 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:53:57 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:53:59 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:53:59 UTC] PHP Stack trace:
+[26-Nov-2017 15:53:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:53:59 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:53:59 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:53:59 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:53:59 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:54:00 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:54:00 UTC] PHP Stack trace:
+[26-Nov-2017 15:54:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:54:00 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:54:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:54:00 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:54:00 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:54:25 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:54:25 UTC] PHP Stack trace:
+[26-Nov-2017 15:54:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:54:25 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:54:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:54:25 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:54:25 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:55:03 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:55:03 UTC] PHP Stack trace:
+[26-Nov-2017 15:55:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:55:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:55:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:55:03 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:55:03 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:55:39 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:55:39 UTC] PHP Stack trace:
+[26-Nov-2017 15:55:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:55:39 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:55:39 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:55:39 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:55:39 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:56:04 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:56:04 UTC] PHP Stack trace:
+[26-Nov-2017 15:56:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:56:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:56:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:56:04 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:56:04 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:56:09 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:56:09 UTC] PHP Stack trace:
+[26-Nov-2017 15:56:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:56:09 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:56:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:56:09 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:56:09 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:56:11 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:56:11 UTC] PHP Stack trace:
+[26-Nov-2017 15:56:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:56:11 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:56:11 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:56:11 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:56:11 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 15:57:02 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::num_arrows() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 8
+[26-Nov-2017 15:57:02 UTC] PHP Stack trace:
+[26-Nov-2017 15:57:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 15:57:02 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 15:57:02 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:57:02 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 15:57:02 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 17:56:22 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 20
+[26-Nov-2017 17:56:22 UTC] PHP Stack trace:
+[26-Nov-2017 17:56:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 17:56:22 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 17:56:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 17:56:22 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 17:56:22 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 17:56:33 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 20
+[26-Nov-2017 17:56:33 UTC] PHP Stack trace:
+[26-Nov-2017 17:56:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 17:56:33 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 17:56:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 17:56:33 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 17:56:33 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 18:03:28 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 14
+[26-Nov-2017 18:03:28 UTC] PHP Stack trace:
+[26-Nov-2017 18:03:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:03:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:03:28 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:03:28 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:03:28 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 18:03:30 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 14
+[26-Nov-2017 18:03:30 UTC] PHP Stack trace:
+[26-Nov-2017 18:03:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:03:30 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:03:30 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:03:30 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:03:30 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 18:03:41 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 13
+[26-Nov-2017 18:03:41 UTC] PHP Stack trace:
+[26-Nov-2017 18:03:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:03:41 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:03:41 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:03:41 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:03:41 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 18:04:47 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 28
+[26-Nov-2017 18:04:47 UTC] PHP Stack trace:
+[26-Nov-2017 18:04:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:04:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:04:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:04:47 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:04:47 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Aula.php:11
+[26-Nov-2017 18:04:49 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 28
+[26-Nov-2017 18:04:49 UTC] PHP Stack trace:
+[26-Nov-2017 18:04:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:04:49 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:04:49 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:04:49 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:04:49 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Aula.php:11
+[26-Nov-2017 18:05:06 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 11
+[26-Nov-2017 18:05:06 UTC] PHP Stack trace:
+[26-Nov-2017 18:05:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:05:06 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:05:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:05:06 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:05:06 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 18:05:35 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 14
+[26-Nov-2017 18:05:35 UTC] PHP Stack trace:
+[26-Nov-2017 18:05:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:05:35 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:05:35 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:05:35 UTC] PHP   4. Aula->carregarAula() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:05:35 UTC] PHP   5. Auladao->carregarAula() /home/ubuntu/workspace/ci/application/controllers/Aula.php:15
+[26-Nov-2017 18:20:43 UTC] PHP Fatal error:  Call to undefined method CI_Session::userdata_destroy() in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 59
+[26-Nov-2017 18:20:43 UTC] PHP Stack trace:
+[26-Nov-2017 18:20:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:20:43 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:20:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:20:43 UTC] PHP   4. Usuario->logout() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:20:50 UTC] PHP Fatal error:  Call to undefined method CI_Session::userdata_destroy() in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 59
+[26-Nov-2017 18:20:50 UTC] PHP Stack trace:
+[26-Nov-2017 18:20:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:20:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:20:50 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:20:50 UTC] PHP   4. Usuario->logout() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:22:05 UTC] PHP Fatal error:  Call to undefined function sess_destroy() in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 59
+[26-Nov-2017 18:22:05 UTC] PHP Stack trace:
+[26-Nov-2017 18:22:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[26-Nov-2017 18:22:05 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[26-Nov-2017 18:22:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[26-Nov-2017 18:22:05 UTC] PHP   4. Usuario->logout() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532

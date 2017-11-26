@@ -28,6 +28,25 @@
             }
         }
         
+        //ATUALIZA OS DADOS DO USUARIO NO BANCO
+        public function atualizarDados($nome, $nick, $email){
+            $this->db->set('nm_usuario', $nome);
+            $this->db->set('nm_nickUsuario', $nick);
+            $this->db->set('ds_emailUsuario', $email);
+            $this->db->where('cd_usuario', $this->session->userdata('id'));
+            $update = $this->db->update('Usuario');
+            
+            if($update){
+                $this->session->set_userdata('nome', $nome);
+                $this->session->set_userdata('nick', $nick);
+                $this->session->set_userdata('email', $email);
+                
+                echo true;
+            }else{
+                echo false;
+            }
+        }
+        
         //CADASTRAR USUARIO
         public function cadUser($nome, $nick, $tp, $email, $senha){
             $dados = array('nm_usuario'=>$nome,
@@ -51,24 +70,5 @@
                 echo "true";
             }
         }
-    public function atualizarDados($nome, $nick, $email){
-            $this->db->set('nm_usuario', $nome);
-            $this->db->set('nm_nickUsuario', $nick);
-            $this->db->set('ds_emailUsuario', $email);
-            $this->db->where('cd_usuario', $this->session->userdata('id'));
-            $update = $this->db->update('Usuario');
-            
-            if($update){
-                $this->session->set_userdata('nome', $nome);
-                $this->session->set_userdata('nick', $nick);
-                $this->session->set_userdata('email', $email);
-                
-                echo true;
-            }else{
-                echo false;
-            }
-        }
-
-        
     }
 ?>
