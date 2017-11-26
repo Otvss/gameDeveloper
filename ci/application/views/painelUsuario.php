@@ -9,6 +9,7 @@
         <script src="<?=base_url('assets/script/slide.js') ?>" type="text/javascript"></script>
         <script src="<?=base_url('assets/script/loginScreen.js') ?>" type="text/javascript"></script>
         <script src="<?=base_url('assets/script/msgBox.js') ?>" type="text/javascript"></script>
+        <script src="<?=base_url('assets/script/Usuario.js') ?>" type="text/javascript"></script>
         
         <!-- CSS-->
         <link href="https://fonts.googleapis.com/css?family=Abel|Pacifico" rel="stylesheet"/>
@@ -62,7 +63,7 @@
                                             <a href="">Alterar Dados dos Cartões</a>
                                         </li>
                                         
-                                        <li><a href="<?=base_url('index.php/Login/logout')?>">Sair</a></li>
+                                        <li><a href="<?=base_url('index.php/Usuario/logout')?>">Sair</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -110,11 +111,11 @@
                             <div class="accessUser">
                                 <div class="titulo-box">
                                     <img src="https://gamedeveloper-otvss.c9users.io/ci/assets/imagens/icons/login.png">
-                                    <h1 class="accessTitulo">Dados Gerais</h1>
+                                    <h1 class="accessTitulo">Dados Gerais<br><small>Substitua os valores e clique em salvar para atualizar seus dados!</small></h1>
                                 </div>
                                 
                                 <div class="form-control">
-                                    <form>
+                                    <form id="form-dadosGerais">
                                         <div class="control-input col-ds-8">
                                             <label for="nome-cpt">Nome:</label>
                                             <input type="text" name="nome-cpt" placeholder="Digite seu nome completo...">
@@ -129,24 +130,9 @@
                                             <label for="email-cpt">E-mail:</label>
                                             <input type="email" name="email-cpt" placeholder="Ex: rodisnei@gamedeveloper.com">
                                         </div>
-                                        
-                                        <div class="control-input col-ds-6">
-                                            <label for="rg-cpt">RG:</label>
-                                            <input type="number" name="rg-cpt">
-                                        </div>
-                                        
-                                        <div class="control-input col-ds-6">
-                                            <label for="cpf-cpt">CPF:</label>
-                                            <input type="number" name="cpf-cpt">
-                                        </div>
-                                        
-                                        <div class="control-input col-ds-3">
-                                            <label for="nasc-date">Data de Nascimento:</label>
-                                            <input type="date" name="nasc-date">
-                                        </div>
                                     </form>
                                     
-                                    <button id="salvarGerais" class="btn btn-default btn-medium">Salvar</button>
+                                    <button id="btn-dadosGerais" class="btn btn-default btn-medium">Salvar</button>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-var base_url = "https://projeto-tcc-gutem77.c9users.io/ci/";
+var base_url = "https://gamedeveloper-otvss.c9users.io/ci/";
 
 function loginScreen(){
     //MODAL DA TELA DE CADASTRO E LOGIN
@@ -245,32 +245,25 @@ function logarUsuario(){
     var cptLogin = $('form[name="form-login"] input[name="login-cpt"]').val();
     var cptSenha = $('form[name="form-login"] input[name="senha-psw"]').val();;
     var btnCad =  $('button[name="login-btn"]'); //VARIAVEL QUE ARMAZENA OS BOTÕES PARA REALIZAR ALTERAÇÕES NOS MESMOS
-    
-    /*if((cptLogin == "") || (cptSenha == "")){
-       btnCad.addClass("btn-error");
-       btnCad.html("Tente Novamente <img class='btn-icon' src='"+base_url+"assets/imagens/icons/error1.png' alt=''>");
-       msgBox(1);
-    }else{*/
-        $.ajax({
-            method: 'POST',
-            data: {'login': cptLogin, 'senha': cptSenha},
-            url: base_url+"index.php/Login/auth",
-            beforeSend: function(){
-                btnCad.html('Verificando...');
-            },
-            success: function(result){
-                if(result == 'encontrado'){
-                    usuario = true;
-                    window.location.replace(base_url+'index.php/Usuario/painelUsuario');    
-                }else{
-                    msgBox(2);
-                }
-            },
-            error: function(){
+
+    $.ajax({
+        method: 'POST',
+        data: {'nick': cptLogin, 'senha': cptSenha},
+        url: base_url+"index.php/Usuario/logarUsuario",
+        beforeSend: function(){
+            btnCad.html('Verificando...');
+        },
+        success: function(result){
+            if(result == '1'){
+                window.location.replace(base_url+'index.php/Usuario/painelUsuario');
+            }else{
                 msgBox(2);
             }
-        });
-    //}
+        },
+        error: function(){
+            msgBox(2);
+        }
+    });
 }
 
 //FUNÇÃO PARA CADASTRO DE USUÁRIO
@@ -295,27 +288,39 @@ function cadastrarUsuario(){
         }
     }
     
+    if(dados[2] != dados[3]){
+        dadosPreenchidos = false;
+    }else if(dados[4] != dados[5]){
+        dadosPreenchidos = false;
+    }
+    
     //EMITINDO MENSAGEM INFORMATIVO DO ESTADO DO CADASTRO
     if(dadosPreenchidos == true){
         var dadosJ = {'nome':dados[0], 'nick':dados[1], 'email':dados[2], 'senha':dados[4]};
         
         $.ajax({
-            url: base_url+"application/controller/Usuario/cadUsuario",
+            url: base_url+"index.php/Usuario/cadastrarUsuario",
             method: "POST",
             data: dadosJ,
             beforeSend: function(){
                 btnCad.innerHTML = "Carregando...";
             },
-            success: function(){
-                btnCad.classList.remove("btn-error");
-                btnCad.classList.add("btn-success");
-                btnCad.innerHTML = "Cadastro Realizado <img src='imagens/icons/pos1.png' alt=''> ";
-                msgBox(3);
+            success: function(result){
+                alert(result);
+                if(result == "true"){
+                    btnCad.classList.remove("btn-error");
+                    btnCad.classList.add("btn-success");
+                    btnCad.innerHTML = "Cadastro Realizado <img src='"+base_url+"assets/imagens/icons/pos1.png' alt=''> ";
+                    msgBox(3);
                 
-                //ZERA OS INPUTS DO FORMULÁRIO DE CADASTRO
-                Array.prototype.slice.call(document.querySelectorAll('form[name="cadastroUser"] input')).forEach(function(input){
-                    input.value = "";
-                });
+                    //ZERA OS INPUTS DO FORMULÁRIO DE CADASTRO
+                    $('form[name="form-cadastro"]').val("");
+                }else{
+                    btnCad.classList.add("btn-alert");
+                    btnCad.innerHTML = "Tente Novamente <img class='btn-icon' src='"+base_url+"/assets/imagens/icons/error1.png' alt=''>";
+                    msgBox(4);
+                }
+                
             },
             error: function(){
                 btnCad.classList.add("btn-error");

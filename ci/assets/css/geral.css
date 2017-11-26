@@ -115,9 +115,11 @@ a{
     float: left;
     display: flex;
     cursor: pointer;
+    padding: 5px;
     margin: 5px;
     align-items: center;
     transition: 0.2s ease-in-out;
+    border-radius: 3px;
 }
 
 .btn-icon{
@@ -188,6 +190,13 @@ a{
     background: #f08600;
 }
 
+.btn-secondary{
+    color: #d9d9d9;
+    text-shadow: none;
+    background: #FFF;
+    border-color: 2px solid #d9d9d9;
+}
+
 .btn-medium{
     padding: 10px 15px;
 }
@@ -229,6 +238,16 @@ a{
 .btn-error{
     background: #FF5034 !important;
     border-color: #FF3010 !important;
+}
+
+.btn-alert{
+    background: #fff06d !important;
+    border-color: #dfce3b !important;
+}
+
+.btn-option{
+    background: #60baff !important;
+    border-color: #1680d1 !important;
 }
 /*FIM DE BOTÕES ESTILIADOS*/
 
@@ -484,8 +503,13 @@ main{
                 padding: 10px;
                 align-items: center;
             }
-        
+            
             .msg-box-desc{
+                float: left;
+                background: #FFF;
+            }
+        
+            .msg-box-msg{
                 padding: 15px;
             }
             
@@ -515,6 +539,26 @@ main{
     
         .msg-title-confirmed{
             background: #309931;
+        }
+        
+    .msg-box-alert{
+        color: #000; 
+        border: 1px solid #fff06d;
+        background: #FFF; 
+    }
+    
+        .msg-title-alert{
+            background: #fff06d;
+        }
+        
+    .msg-box-option{
+        color: #000; 
+        border: 1px solid #1680d1;
+        background: #FFF; 
+    }
+    
+        .msg-title-option{
+            background: #60baff;
         }
 /* FIM DAS CONFIGURAÇÕES DO MODAL PADRÃO */
 

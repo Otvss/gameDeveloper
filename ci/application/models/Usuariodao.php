@@ -1,22 +1,31 @@
 <?php
     class UsuarioDAO extends CI_Model{
-        
+        //LOGAR USUARIO
         public function getUser($login, $senha){
-            $usr = $this->db->query("CALL logarUsuario('$login', '$senha')");
-            require_once APPPATH."models/UsuarioModel.php";
-            if($usr->num_rows() > 0){
-                $usuario = $usr->result()[0];
+            $this->db->where("nm_nickUsuario", $login);
+            $this->db->where("cd_senhaUsuario", $senha);
+            $user = $this->db->get("Usuario");
+            
+            if($user->num_rows()>0){
+                $usuario = $user->result()[0];
                 
                 $id = $usuario->cd_usuario;
                 $nome = $usuario->nm_usuario;
                 $email = $usuario->ds_emailUsuario;
                 $nick = $usuario->nm_nickUsuario;
                 
-                return new UsuarioModel($id, $nome, $email, $nick); //CRIA UM NOVO OBJETO COM OS ITENS ADQUIRIDOS DO BANCO
+                $data = array('id'=>$id,
+                            'nome'=>$nome,
+                            'email'=>$email,
+                            'nick'=>$nick,
+                            'id'=>$id);
+                
+                $this->session->set_userdata($data);
+                
+                echo true;
             }else{
-                return null; //CASO NÃO EXISTA O USUÁRIO
+                echo false; //CASO NÃO EXISTA O USUÁRIO
             }
         }
-        
     }
 ?>

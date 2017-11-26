@@ -482,3 +482,410 @@
 [09-Nov-2017 12:43:39 UTC] PHP Stack trace:
 [09-Nov-2017 12:43:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
 [09-Nov-2017 12:43:39 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:16:00 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:16:00 UTC] PHP Stack trace:
+[25-Nov-2017 15:16:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:16:00 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:16:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:16:00 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:16:00 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:16:00 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:18:24 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:18:24 UTC] PHP Stack trace:
+[25-Nov-2017 15:18:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:18:24 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:18:24 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:18:24 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:18:24 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:18:24 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:20:34 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:20:34 UTC] PHP Stack trace:
+[25-Nov-2017 15:20:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:20:34 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:20:34 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:20:34 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:20:34 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:20:34 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:25:44 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:25:44 UTC] PHP Stack trace:
+[25-Nov-2017 15:25:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:25:44 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:25:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:25:44 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:25:44 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:25:44 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:26:32 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:26:32 UTC] PHP Stack trace:
+[25-Nov-2017 15:26:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:26:32 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:26:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:26:32 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:26:32 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:26:32 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:26:52 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:26:52 UTC] PHP Stack trace:
+[25-Nov-2017 15:26:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:26:52 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:26:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:26:52 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:26:52 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:26:52 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:27:23 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:27:23 UTC] PHP Stack trace:
+[25-Nov-2017 15:27:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:27:23 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:27:23 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:27:23 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:27:23 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:27:23 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:27:26 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:27:26 UTC] PHP Stack trace:
+[25-Nov-2017 15:27:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:27:26 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:27:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:27:26 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:27:26 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:27:26 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:27:43 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:27:43 UTC] PHP Stack trace:
+[25-Nov-2017 15:27:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:27:43 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:27:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:27:43 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:27:43 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:27:43 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:34:00 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:34:00 UTC] PHP Stack trace:
+[25-Nov-2017 15:34:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:34:00 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:34:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:34:00 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:34:00 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:34:00 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:34:33 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:34:33 UTC] PHP Stack trace:
+[25-Nov-2017 15:34:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:34:33 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:34:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:34:33 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:34:33 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:34:33 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:36:03 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:36:03 UTC] PHP Stack trace:
+[25-Nov-2017 15:36:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:36:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:36:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:36:03 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:36:03 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:36:03 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:36:54 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:36:54 UTC] PHP Stack trace:
+[25-Nov-2017 15:36:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:36:54 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:36:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:36:54 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:36:54 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:36:54 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:37:06 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:37:06 UTC] PHP Stack trace:
+[25-Nov-2017 15:37:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:37:06 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:37:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:37:06 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:37:06 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:37:06 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:37:36 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:37:36 UTC] PHP Stack trace:
+[25-Nov-2017 15:37:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:37:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:37:36 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:37:36 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:37:36 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:37:36 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:38:03 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:38:03 UTC] PHP Stack trace:
+[25-Nov-2017 15:38:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:38:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:38:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:38:03 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:38:03 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:38:03 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:39:52 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 15:39:52 UTC] PHP Stack trace:
+[25-Nov-2017 15:39:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:39:52 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:39:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:39:52 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:39:52 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:40
+[25-Nov-2017 15:39:52 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 15:45:00 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:45:00 UTC] PHP Stack trace:
+[25-Nov-2017 15:45:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:45:00 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:45:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:45:00 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:45:00 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:45:32 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:45:32 UTC] PHP Stack trace:
+[25-Nov-2017 15:45:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:45:32 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:45:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:45:32 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:45:32 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:47:03 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:47:03 UTC] PHP Stack trace:
+[25-Nov-2017 15:47:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:47:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:47:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:47:03 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:47:03 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:47:08 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:47:08 UTC] PHP Stack trace:
+[25-Nov-2017 15:47:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:47:08 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:47:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:47:08 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:47:08 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:48:58 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/usuariomodel.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 36
+[25-Nov-2017 15:48:58 UTC] PHP Stack trace:
+[25-Nov-2017 15:48:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:48:58 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:48:58 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:48:58 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:49:49 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/usuariomodel.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 36
+[25-Nov-2017 15:49:49 UTC] PHP Stack trace:
+[25-Nov-2017 15:49:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:49:49 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:49:49 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:49:49 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:52:57 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:52:57 UTC] PHP Stack trace:
+[25-Nov-2017 15:52:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:52:57 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:52:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:52:57 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:52:57 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:53:27 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:53:27 UTC] PHP Stack trace:
+[25-Nov-2017 15:53:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:53:27 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:53:27 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:53:27 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:53:27 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:53:52 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:53:52 UTC] PHP Stack trace:
+[25-Nov-2017 15:53:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:53:52 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:53:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:53:52 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:53:52 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:54:09 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:54:09 UTC] PHP Stack trace:
+[25-Nov-2017 15:54:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:54:09 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:54:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:54:09 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:54:09 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:55:10 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/usuario.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 36
+[25-Nov-2017 15:55:10 UTC] PHP Stack trace:
+[25-Nov-2017 15:55:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:55:10 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:55:10 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:55:10 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:56:20 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:56:20 UTC] PHP Stack trace:
+[25-Nov-2017 15:56:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:56:20 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:56:20 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:56:20 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:56:20 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:56:46 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:56:46 UTC] PHP Stack trace:
+[25-Nov-2017 15:56:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:56:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:56:46 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:56:46 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:56:46 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 15:58:22 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 15:58:22 UTC] PHP Stack trace:
+[25-Nov-2017 15:58:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 15:58:22 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 15:58:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:58:22 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 15:58:22 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:00:28 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 16:00:28 UTC] PHP Stack trace:
+[25-Nov-2017 16:00:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:00:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:00:28 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:00:28 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:00:28 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:01:15 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 16:01:15 UTC] PHP Stack trace:
+[25-Nov-2017 16:01:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:01:15 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:01:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:01:15 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:01:15 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:01:28 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 16:01:28 UTC] PHP Stack trace:
+[25-Nov-2017 16:01:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:01:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:01:28 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:01:28 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:01:28 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:02:59 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 16:02:59 UTC] PHP Stack trace:
+[25-Nov-2017 16:02:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:02:59 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:02:59 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:02:59 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:02:59 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:03:21 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 16:03:21 UTC] PHP Stack trace:
+[25-Nov-2017 16:03:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:03:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:03:21 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:03:21 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:03:21 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:04:32 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 16:04:32 UTC] PHP Stack trace:
+[25-Nov-2017 16:04:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:04:32 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:04:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:04:32 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:04:32 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:06:49 UTC] PHP Fatal error:  Interface 'Serializablee' not found in /home/ubuntu/workspace/ci/application/models/UsuarioModel.php on line 2
+[25-Nov-2017 16:06:49 UTC] PHP Stack trace:
+[25-Nov-2017 16:06:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:06:49 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:06:49 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:06:49 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:06:49 UTC] PHP   5. require_once() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:36
+[25-Nov-2017 16:15:01 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 32
+[25-Nov-2017 16:15:01 UTC] PHP Stack trace:
+[25-Nov-2017 16:15:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:15:01 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:15:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:15:01 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:15:01 UTC] PHP   5. UsuarioDAO->cadUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:43
+[25-Nov-2017 16:15:15 UTC] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 32
+[25-Nov-2017 16:15:15 UTC] PHP Stack trace:
+[25-Nov-2017 16:15:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:15:15 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:15:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:15:15 UTC] PHP   4. Usuario->cadastrarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:15:15 UTC] PHP   5. UsuarioDAO->cadUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:43
+[25-Nov-2017 16:18:51 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 38
+[25-Nov-2017 16:18:51 UTC] PHP Stack trace:
+[25-Nov-2017 16:18:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:18:51 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:19:22 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 38
+[25-Nov-2017 16:19:22 UTC] PHP Stack trace:
+[25-Nov-2017 16:19:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:19:22 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:19:42 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 38
+[25-Nov-2017 16:19:42 UTC] PHP Stack trace:
+[25-Nov-2017 16:19:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:19:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:35:38 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 9
+[25-Nov-2017 16:35:38 UTC] PHP Stack trace:
+[25-Nov-2017 16:35:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:35:38 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:35:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:35:38 UTC] PHP   4. Login->auth() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:35:38 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Login.php:22
+[25-Nov-2017 16:35:43 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 9
+[25-Nov-2017 16:35:43 UTC] PHP Stack trace:
+[25-Nov-2017 16:35:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 16:35:43 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 16:35:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:35:43 UTC] PHP   4. Login->auth() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 16:35:43 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Login.php:22
+[25-Nov-2017 17:49:55 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 17:49:55 UTC] PHP Stack trace:
+[25-Nov-2017 17:49:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:49:55 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:49:55 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:49:55 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:49:55 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:30
+[25-Nov-2017 17:49:55 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 17:50:38 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 17:50:38 UTC] PHP Stack trace:
+[25-Nov-2017 17:50:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:50:38 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:50:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:50:38 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:50:38 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:30
+[25-Nov-2017 17:50:38 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 17:51:37 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/ci/application/models/serianameable.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 2
+[25-Nov-2017 17:51:37 UTC] PHP Stack trace:
+[25-Nov-2017 17:51:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:51:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:51:37 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:51:37 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:51:37 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:30
+[25-Nov-2017 17:51:37 UTC] PHP   6. require_once() /home/ubuntu/workspace/ci/system/core/Loader.php:333
+[25-Nov-2017 17:52:23 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 17:52:23 UTC] PHP Stack trace:
+[25-Nov-2017 17:52:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:52:23 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:52:23 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:52:23 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:52:23 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 17:54:52 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 17:54:52 UTC] PHP Stack trace:
+[25-Nov-2017 17:54:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:54:52 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:54:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:54:52 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:54:52 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 17:55:31 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 17:55:31 UTC] PHP Stack trace:
+[25-Nov-2017 17:55:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:55:31 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:55:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:55:31 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:55:31 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 17:56:01 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 17:56:01 UTC] PHP Stack trace:
+[25-Nov-2017 17:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:56:01 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:56:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:56:01 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:56:01 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 17:57:29 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 17:57:29 UTC] PHP Stack trace:
+[25-Nov-2017 17:57:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 17:57:29 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 17:57:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:57:29 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 17:57:29 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 18:00:24 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 18:00:24 UTC] PHP Stack trace:
+[25-Nov-2017 18:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 18:00:24 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 18:00:24 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:00:24 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:00:24 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 18:02:30 UTC] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 9
+[25-Nov-2017 18:02:30 UTC] PHP Stack trace:
+[25-Nov-2017 18:02:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 18:02:30 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 18:02:30 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:02:30 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:02:30 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 18:06:47 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 18:06:47 UTC] PHP Stack trace:
+[25-Nov-2017 18:06:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 18:06:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 18:06:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:06:47 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:06:47 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34
+[25-Nov-2017 18:07:03 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/ubuntu/workspace/ci/application/models/Usuariodao.php on line 10
+[25-Nov-2017 18:07:03 UTC] PHP Stack trace:
+[25-Nov-2017 18:07:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[25-Nov-2017 18:07:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[25-Nov-2017 18:07:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:07:03 UTC] PHP   4. Usuario->logarUsuario() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[25-Nov-2017 18:07:03 UTC] PHP   5. UsuarioDAO->getUser() /home/ubuntu/workspace/ci/application/controllers/Usuario.php:34

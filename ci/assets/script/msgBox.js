@@ -125,14 +125,22 @@ function msgBox(msg){
                 var boxTitle = $('<h1>',{
                     class: 'msg-box-title'
                 }).appendTo('.msg-box');
-                
-                var boxDesc = $('<p>',{
-                    class: 'msg-box-desc'
+            
+                var msgDesc = $('<div>',{
+                    class: 'col-ds-12 msg-box-desc'
                 }).appendTo('.msg-box');
-                
-                var boxClose = $('<button>',{
-                    class: 'btn btn-default btn-medium msg-box-close'
-                }).appendTo('.msg-box');
+                    
+                    var boxDesc = $('<p>',{
+                        class: 'msg-box-msg'
+                    }).appendTo('.msg-box-desc');
+                    
+                    var boxButton = $('<div>',{
+                        class: 'col-ds-12 msg-box-button'
+                    }).appendTo('.msg-box-desc');
+                    
+                        var boxClose = $('<button>',{
+                            class: 'btn btn-default btn-medium'
+                        }).appendTo('.msg-box-button');
     
     //ANIMAÇÃO DE APRESENTAÇÃO DA CAIXA DE MENSAGEM
     setTimeout(function(){
@@ -190,10 +198,58 @@ function msgBox(msg){
             boxClose.html("Fechar");
             boxClose.addClass("btn-success");
         break;
+        
+        case 4:
+            msgBox.addClass('msg-box-alert'); 
+            
+            boxTitle.html("Email Já Cadastrado!");
+            boxTitle.addClass('msg-title-alert');
+           
+            boxDesc.html("O email inserido ja está cadastrado no site\n"
+                          +"Caso tenha esquecido a senha <a href='#' style='color: #2375FF'>http://www.gamedeveloper.com.br/contato</a>");
+        
+            boxClose.html("Fechar");
+            boxClose.removeClass();
+        break;
+        
+        case 5:
+            msgBox.addClass('msg-box-option'); 
+            
+            boxTitle.html("Confirmar Ação");
+            boxTitle.addClass('msg-title-option');
+           
+            boxDesc.html("Deseja realmente alterar o seu cadastro ?!");
+        
+            boxClose.attr('option', '1');
+            boxClose.html('Sim');
+            boxClose.removeClass('btn-default').addClass('btn btn-default btn-medium btn-option');
+            
+            var boxConfirm = $('<button>',{
+                class: 'btn btn-medium btn-secondary',
+                option: '0',
+            }).appendTo('.msg-box-button').html("Não");
+        break;
+        
+        //CONFIRMAÇÃO DE CADASTRO
+        case 6:
+            msgBox.addClass('msg-box-confirmed'); 
+            
+            boxTitle.html("Dados Atualizados !");
+            boxTitle.addClass('msg-title-confirmed');
+           
+            boxDesc.html("Dados alterados com sucesso!");
+        
+            boxClose.html("Fechar");
+            boxClose.addClass("btn-success");
+        break;
     }
     
     //ADICIONANDO EVENTOS
     boxClose.click(function(){
+        msgBoxClose(boxContainer, modal);
+    });
+    
+    boxConfirm.click(function(){
         msgBoxClose(boxContainer, modal);
     });
 }

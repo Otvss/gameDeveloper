@@ -2,7 +2,7 @@
     class UsuarioModel{
         private $id, $nome, $nick, $email, $senha;
         
-        public function __construct($id, $nome, $email, $nick){
+        public function __construct($id, $nome, $email, $nick, $senha){
             $this->id = $id;
             $this->nome = $nome;
             $this->nick = $nick;

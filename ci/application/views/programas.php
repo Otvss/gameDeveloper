@@ -35,8 +35,8 @@
             </div>
             
             <!-- ROLAGEM DOS PROGRAMAS -->
-            <div class="container">
-                <div class="row">
+            <div class="container-fixed">
+                <div class="row bloco">
                     <div class="col-ds-12">
                         <img class="img-prog1" src="<?=base_url('assets/imagens/noticias/not1.png')?>" alt="" title="Titulo da Noticia">
                         <h1>nomePrograma</h1>
@@ -45,13 +45,21 @@
                         <a class="btn btn-default btn-medium" href="#">Visite o Site</a>
                     </div>
                 </div>
+                
                 <div class="row">
                     <div class="col-ds-12">
-                        <img class="img-prog2" src="<?=base_url('assets/imagens/noticias/not1.png')?>" alt="" title="Titulo da Noticia">
-                        <h1>nomePrograma</h1>
-                        <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <br>
-                        <a class="btn btn-default btn-medium" href="#">Visite o Site</a>
+                        <div class="row">
+                            <div class="col-ds-4">
+                                <img class="img-fluid" src="<?=base_url('assets/imagens/noticias/not1.png')?>" alt="" title="Titulo da Noticia">
+                            </div>
+                        </div>
+                        
+                        <div class="col-ds-8">
+                            <h1>nomePrograma</h1>
+                            <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <br>
+                            <a class="btn btn-default btn-medium" href="#">Visite o Site</a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
