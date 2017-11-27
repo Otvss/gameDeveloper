@@ -30,5 +30,13 @@
             
             echo json_encode($aula);
         }
+        
+        public function mostrarDetalhes($id){
+            $this->db->select('*');
+            $this->db->join('Usuario', 'Usuario.cd_usuario = aula.cd_usuario');
+            $det = $this->db->get_where('aula', array('cd_aula'=>$id))->result();
+            
+            echo json_encode($det);
+        }
     }
 ?>

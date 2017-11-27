@@ -28,4 +28,14 @@ class Aula extends CI_Controller {
 		
 		$Auladao->listarAulas($qtd, $page);
 	}
+	
+	public function mostrarDetalhes(){
+		$id = $this->input->post('id');
+		
+		$this->load->model('Auladao');
+		
+		$Auladao = $this->Auladao;
+		
+		$Auladao->mostrarDetalhes($id);
+	}
 }

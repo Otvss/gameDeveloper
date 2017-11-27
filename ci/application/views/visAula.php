@@ -40,7 +40,7 @@
             </div>
             
             <!-- AULA EM VIDEO -->
-            <div class="container-fixed" style="margin-top: -50px">
+            <div class="container-fixed" style="margin-top: -100px">
                 <div class="row" style="background: #1b1b1b; border: 1px solid #000">
                     <div class="col-ds-6">
                         <iframe style="width: 100%; height: 300px" src="<?=$this->session->flashdata('video')?>" frameborder="0" allowfullscreen></iframe>

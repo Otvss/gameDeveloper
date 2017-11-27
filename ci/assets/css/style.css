@@ -21,7 +21,7 @@ button[name="menuLateral"]{
 }
 
 .cadLogScreen{
-    background: url(../imagens/fundo/ciri-cadastro-fundo.jpg);
+    background: url(../imagens/fundo/loginFundo.jpg);
     background-size: cover;
     background-position: center center;
 }

@@ -44,7 +44,8 @@ function carregarAula(qtd, page){
     $('.aulaList').html("");
     
     //LISTA AS AULAS DE ACORDO COM A QUANTIDADE E PAGINA SELECIONADAS
-    if(window.location.href == "https://gamedeveloper-otvss.c9users.io/ci/"){
+    
+    if($('.aulaList')){
         $.ajax({
             url: base_url+"index.php/Aula/listarAulas",
             method: 'POST',
@@ -55,7 +56,10 @@ function carregarAula(qtd, page){
                 for(var i = 0; i < result.length; i++){
                     //RECEPTACULO QUE ARMAZENARA AS INF DA AULA
                     var recep = $('<div>',{
-                        class: 'col-ds-2-4 btnAula item-preview aula'+result[i].cd_aula
+                        id: 'aula'+result[i].cd_aula,
+                        class: 'col-ds-2-4 btnAula item-preview aula'+result[i].cd_aula,
+                        onmouseenter: 'mostrarDetalhesAula(this)',
+                        onmouseleave: 'ocultarDetalhe()',
                     }).appendTo('.aulaList');
                     
                         var a = $('<a>',{
@@ -79,6 +83,59 @@ function carregarAula(qtd, page){
             }
         });
     }
+}
+
+function mostrarDetalhesAula(aula){
+    //PEGA O ID DA AULA E RECORTA PARA PEGAR O CÓDIGO DELA NO BANCO
+    var id = aula.id.substr(4, (aula.id.length -1));
+    var posY = aula.offsetTop;
+    
+    if(aula.offsetLeft + 200 >= 612){
+        var posX = aula.offsetLeft - 460;
+    }else{
+        var posX = aula.offsetLeft + 210;
+    }
+    
+    
+    console.log(posX);
+    
+    $.ajax({
+        url: base_url+'index.php/Aula/mostrarDetalhes',
+        method: 'POST',
+        data: {'id': id},
+        success: function(result){
+            var result = JSON.parse(result);
+            
+            var titulo = result[0].nm_aula;
+            var desc = result[0].ds_descAula;
+            var colab = result[0].nm_nickUsuario;
+            
+            $('<div>',{
+                class: 'aula-preview',
+                style: 'z-index: 9999; position: absolute; width: 450px; height: 125px; background: rgba(0, 0, 0, 0.8); left:'+posX+'px; top:'+posY+'px',
+            }).appendTo('.aulaList');
+            
+                $('<div>',{
+                    class: 'col-ds-12',
+                }).appendTo('.aula-preview');
+            
+                    $('<h2>',{
+                        style: 'color: #f08600',
+                    }).appendTo('.aula-preview div').html(titulo);
+                    
+                    $('<p>',{
+                        style: 'color: aqua',
+                    }).appendTo('.aula-preview div').html(colab);
+                
+                    $('<p>',{
+                        style: 'color: #FFF',
+                    }).appendTo('.aula-preview div').html(desc);
+        }
+    });
+}
+
+function ocultarDetalhe(){
+    $('.aula-preview').remove();
 }
 
 window.onload = main;

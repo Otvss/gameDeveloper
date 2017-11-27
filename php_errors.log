@@ -1239,3 +1239,22 @@
 [27-Nov-2017 00:59:42 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
 [27-Nov-2017 00:59:42 UTC] PHP   4. Aula->listarAulas() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
 [27-Nov-2017 00:59:42 UTC] PHP   5. Auladao->listarAulas() /home/ubuntu/workspace/ci/application/controllers/Aula.php:29
+[27-Nov-2017 11:34:47 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 85
+[27-Nov-2017 11:34:47 UTC] PHP Stack trace:
+[27-Nov-2017 11:34:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[27-Nov-2017 11:34:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[27-Nov-2017 11:34:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[27-Nov-2017 11:34:47 UTC] PHP   4. Usuario->logout() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[27-Nov-2017 11:38:05 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/ci/application/controllers/Usuario.php on line 85
+[27-Nov-2017 11:38:05 UTC] PHP Stack trace:
+[27-Nov-2017 11:38:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[27-Nov-2017 11:38:05 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[27-Nov-2017 11:38:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[27-Nov-2017 11:38:05 UTC] PHP   4. Usuario->logout() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[27-Nov-2017 13:46:42 UTC] PHP Fatal error:  Cannot redeclare Auladao::listarAulas() in /home/ubuntu/workspace/ci/application/models/Auladao.php on line 34
+[27-Nov-2017 13:46:42 UTC] PHP Stack trace:
+[27-Nov-2017 13:46:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/ci/index.php:0
+[27-Nov-2017 13:46:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/ci/index.php:320
+[27-Nov-2017 13:46:42 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[27-Nov-2017 13:46:42 UTC] PHP   4. Aula->listarAulas() /home/ubuntu/workspace/ci/system/core/CodeIgniter.php:532
+[27-Nov-2017 13:46:42 UTC] PHP   5. CI_Loader->model() /home/ubuntu/workspace/ci/application/controllers/Aula.php:25

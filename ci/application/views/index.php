@@ -31,7 +31,7 @@
             </div>
             
             <div class="container-fixed">
-                <div class="row">
+                <div class="row bloco">
                     <div class="col-ds-12">
                         <h1 class="titulo-janela">destaque<span style="color: #FFF">Semanal</span></h1>
                     </div>
