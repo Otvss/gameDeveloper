@@ -151,3 +151,8 @@ button[name="menuLateral"]{
 .aulaText h2{
     color: #f08600;
 }
+
+.nmUser{
+    font-size: 1em;
+    color: aqua;
+}

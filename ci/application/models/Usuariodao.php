@@ -14,7 +14,8 @@
                 $email = $usuario->ds_emailUsuario;
                 $nick = $usuario->nm_nickUsuario;
                 
-                $data = array('id'=>$id,
+                $data = array('usuario'=>'logado',
+                            'id'=>$id,
                             'nome'=>$nome,
                             'email'=>$email,
                             'nick'=>$nick,

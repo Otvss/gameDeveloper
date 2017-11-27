@@ -34,7 +34,7 @@
             <!-- MENU DO USUÁRIO -->
             <div style="width: 200px; float: right;">
                 <?php
-                    if(isset($this->session->userdata['nome'])){
+                    if(isset($this->session->userdata['usuario'])){
                 ?>
                         <div widht="float: left; width: 100%">
                             <a href="<?=base_url('index.php/Usuario/painelUsuario')?>" id="nav-log">

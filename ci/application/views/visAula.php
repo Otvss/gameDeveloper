@@ -33,7 +33,7 @@
             <!-- APRESENTAÇÃO DA AULA -->
             <div class="banner" style="400px">
                 <div class="banner-desc" style="background: url(<?=base_url($this->session->flashdata('img'))?>);">
-                    <h2>Nome do Colaborador</h2>
+                    <h2><?=$this->session->flashdata('nmUsuario')?></h2>
                     <h1><?=$this->session->flashdata('nome')?></h1>
                     <div class="share"></div>
                 </div>
@@ -43,7 +43,7 @@
             <div class="container-fixed" style="margin-top: -50px">
                 <div class="row" style="background: #1b1b1b; border: 1px solid #000">
                     <div class="col-ds-6">
-                        <iframe style="width: 100%; height: 300px" src="https://www.youtube.com/embed/Ds1n6aHchRU" frameborder="0" allowfullscreen></iframe>
+                        <iframe style="width: 100%; height: 300px" src="<?=$this->session->flashdata('video')?>" frameborder="0" allowfullscreen></iframe>
                     </div>
                     
                     <div class="col-ds-6">
@@ -52,7 +52,7 @@
                         
                         <div class="col-ds-6">
                             <img src="" alt="">
-                            <h2><?=$this->session->flashdata('nmUsuario')?></h2>
+                            <h2 class="nmUser"><?=$this->session->flashdata('nmUsuario')?></h2>
                         </div>
                         
                         <div class="col-ds-12">

@@ -333,15 +333,3 @@ function cadastrarUsuario(){
         msgBox(2);
     }
 }
-
-//ALTERAÇÕES BÁSICAS NO SITE CASO O USUÁRIO ESTEJA LOGADO
-function alterarTelasB(usuario){
-    //LINK PARA PAINEL DE CADASTRO E LOGIN / PAINEL DO USUÁRIO
-    /*if(usuario){
-        var btnAcesso = $('#navUser');
-        btnAcesso.off();
-        btnAcesso.attr('href', base_url+'index.php/Usuario/painelUsuario');
-    }else{*/
-        document.querySelector("#navUser").addEventListener("click", loginScreen); //CHAMAS AS AÇÕES DO DA TELA DE LOGIN
-    //}
-}
